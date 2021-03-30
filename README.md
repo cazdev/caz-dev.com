@@ -16,7 +16,7 @@ Create an optimised build ready for production
 
 ### `npm install gh-pages --save-dev`
 
-Install github pages deployment
+Install github pages deployment for react
 
 ### `npm run deploy`
 
