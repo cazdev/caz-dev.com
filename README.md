@@ -13,3 +13,11 @@ The page will reload if you make edits.
 ### `npm run build`
 
 Create an optimised build ready for production
+
+### `npm install gh-pages --save-dev`
+
+Install github pages deployment
+
+### `npm run deploy`
+
+Deploy it to GitHub Pages.
