@@ -1,0 +1,31 @@
+.App-header {
+    font-size: calc(20px + 2vmin);
+    color: white;
+    /*margin-right: 20vmin; // pad right side*/
+  }
+  
+  .App-tagline {
+    font-size: calc(15px + 2vmin);
+    color: white;
+    padding-bottom: 10vmin;
+  }
+
+  .Social-Icons span .icon {
+    font-size: calc(11px + 2vmin);
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    transition: all .2s ease-in-out; 
+  }
+  
+  .Social-Icons span .icon:hover {
+    transform: scale(1.2); 
+  }
+
+  @media screen and (max-width: 1200px) {
+    .App-header {
+      font-size: calc(15px + 2vmin);
+      color: white;
+      padding-bottom: 2vmin;
+      margin-right: 0px;
+    }
+}

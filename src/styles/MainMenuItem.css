@@ -1,0 +1,48 @@
+  /* Hover animations */
+  
+  .MenuItem { 
+    transition: all .2s ease-in-out; 
+  }
+
+  .MenuItem:hover { 
+    transform: scale(1.1); 
+  }
+
+  /* Styling */
+
+  .SubText {
+    font-size: calc(8px + 2vmin);
+    color: white;
+    padding: 1vmin;
+  }
+
+  .container a {
+    text-decoration: none;
+  }
+
+/* Responsive UI */
+
+@media (prefers-reduced-motion: no-preference) {
+  .MainMenuItem {
+      height: 23vmin;
+      pointer-events: none;
+      border-radius: 50%;
+      flex: 1;
+      margin: 0px 5px;
+      background: linear-gradient(145deg, #363636, #2d2d2d);
+      box-shadow:  10px 10px 20px #2b2b2b,
+          -10px -10px 20px #3a3a3a;
+      margin-left: 6vmin;
+      margin-right: 6vmin;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .MainMenuItem {
+      height: 32vmin;
+  }
+
+  .SubText {
+      margin-bottom: 8vmin;
+  }
+}
