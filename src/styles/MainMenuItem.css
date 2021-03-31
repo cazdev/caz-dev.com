@@ -1,11 +1,7 @@
   /* Hover animations */
   
-  .MenuItem { 
-    transition: all .2s ease-in-out; 
-  }
-
   .MenuItem:hover { 
-    transform: scale(1.1); 
+    cursor: pointer;
   }
 
   /* Styling */

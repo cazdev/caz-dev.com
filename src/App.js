@@ -1,69 +1,51 @@
 import './App.css';
-import React from 'react';
-/* Componented */
+import React, {useRef, useEffect} from 'react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import {gsap, TimelineLite, Power3} from 'gsap';
 
-import MainMenuItem from './components/MainMenuItem'
-import HeaderSection from './components/HeaderSection'
-import FooterSection from './components/FooterSection'
+/* Components */
+import MainSection from './components/MainSection'
+import {Link} from 'react-scroll'
 
-/* Images */
-import portfolio from './images/portfolio.png';
-import profile from './images/profile.png'
-import resume from './images/resume.png'
-import contact from './images/contact.png'
-/* import avatar from './images/photo.png' */
+gsap.registerPlugin(ScrollTrigger)
 
-/* Icons */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
-
-const envelope = <FontAwesomeIcon icon={faPaperPlane} />
-const marker = <FontAwesomeIcon icon={faMapMarker} />
-const github = <FontAwesomeIcon icon={faGithub} />
-const linkedin = <FontAwesomeIcon icon={faLinkedin} />
-
-var name = "Chaz L.";
-var jobtitle = "Software Engineer";
-var company = "Intersev";
-
+/* Refresh animations onload */
+window.onload = function(e) { 
+  gsap.utils.toArray(".hoverAnim").forEach(MenuItem => {
+    let hover = gsap.to(MenuItem, {scale: 1.1, duration: 0.2, paused: true, ease: Power3.easeOut});
+    MenuItem.addEventListener("mouseenter", () => hover.play());
+    MenuItem.addEventListener("mouseleave", () => hover.reverse());
+  });
+}
 
 function App() {
-  
+
+  let tl = new TimelineLite({ delay: 0.0 });
+
+  useEffect(() => {
+    tl.from('.inAnim', {y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 }, 'Start');
+    tl.staggerFrom('.textAnim', 1, {y: 30, ease: Power3.easeOut, opacity: 0}, 0.1, 'Start');
+  }, [])
+
   return (
-    <div className="App">
-      <body className="App-body">
+    <>
+      {/* Main landing page */}
+      <MainSection id="MainSection"/>
 
-      {/* Avatar image */}
-      {/*<img className="Avatar" src={avatar} alt="MainMenuItem" /> // Profile image*/}
+      {/* Profile page */}
+      <div className="ProfileSection" id="ProfileSection">
+        <h2>Profile</h2>
+      </div>
 
-        {/* Title and tagline section */}
-        <HeaderSection 
-          name={ name }
-          jobtitle={ jobtitle }
-          company={ company }
-          icon1={ github } 
-          icon2={ linkedin }
-        />
-        
-        {/* Main menu items list */}
-        <div className="MainMenuList">
-          <MainMenuItem image={profile} subtext="Profile" link="https://caz-dev.com/profile.html"/>
-          <MainMenuItem image={portfolio} subtext="Projects" link="https://caz-dev.com/portfolio.html"/>
-          <MainMenuItem image={resume} subtext="Resume" link="/dl/Resume.pdf"/>
-          <MainMenuItem image={contact} subtext="Contact" link="mailto:contact@caz-dev.com?subject=Contact from chaz.page" />
-        </div>
+      {/* Projects page */}
+      <div className="ProjectsSection" id="ProjectsSection">
+        <h2>Projects</h2>
+      </div>
 
-        {/* Footer */}
-        <FooterSection 
-          icon1={ envelope } 
-          icon2={ marker }
-        />
-      </body>
-    </div>
+      <Link  to={"MainSection"} spy={true} >
+        <div className="ScrollToTop" ></div>
+      </Link>
+    </>
   );
 }
 

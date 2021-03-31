@@ -4,21 +4,16 @@
     /*margin-right: 20vmin; // pad right side*/
   }
   
-  .App-tagline {
+  h2 {
     font-size: calc(15px + 2vmin);
     color: white;
-    padding-bottom: 10vmin;
   }
 
   .Social-Icons span .icon {
     font-size: calc(11px + 2vmin);
     margin-left: 2vmin;
     margin-right: 2vmin;
-    transition: all .2s ease-in-out; 
-  }
-  
-  .Social-Icons span .icon:hover {
-    transform: scale(1.2); 
+    margin-bottom: 5vmin;
   }
 
   @media screen and (max-width: 1200px) {
