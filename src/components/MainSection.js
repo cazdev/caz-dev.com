@@ -29,7 +29,7 @@ const linkedin = <FontAwesomeIcon icon={faLinkedin} />
 /* Information */
 var name = "Chaz L.";
 var jobtitle = "Software Engineer";
-var company = "Intersev";
+var company = "Interserv";
 
 export default function MainSection() {
     return (
