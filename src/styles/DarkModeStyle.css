@@ -1,0 +1,55 @@
+body.light-mode {
+  background: #e0e0e0;
+    color: rgb(70, 70, 70);
+    transition: background-color 0.1s ease;
+  }
+body.dark-mode {
+    background: #363636;
+    color: rgb(240, 240, 240);
+    transition: background-color 0.1s ease;
+}
+
+body.dark-mode .icon {
+  color: rgb(180, 180, 180);
+}
+
+body.light-mode .icon {
+  color: rgb(120, 120, 120);
+}
+
+body.dark-mode .NeoButton {
+  background: #363636;
+  box-shadow:  10px 10px 25px #2e2e2e,
+      -10px -10px 25px #3e3e3e;
+  transition: background-color 0.1s ease;
+  transition: box-shadow 0.1s ease;
+}
+
+body.light-mode .NeoButton {
+  background: #e0e0e0;
+  box-shadow:  10px 10px 25px #bebebe,
+      -10px -10px 25px #ffffff;
+  transition: background-color 0.1s ease;
+  transition: box-shadow 0.1s ease;
+}
+
+body.dark-mode .ScrollToTop {
+  background: #363636;
+  box-shadow:  6px 6px 14px #2e2e2e,
+      -6px -6px 14px #3e3e3e;
+}
+
+body.light-mode .ScrollToTop {
+  background: #e0e0e0;
+  box-shadow:  6px 6px 14px #bebebe,
+      -6px -6px 14px #ffffff;
+}
+
+.darkModeToggle {
+  font-size: calc(24px + 1vmin);
+  cursor: pointer;
+  top: 0vh;
+  right: 5vw;
+  position:absolute;
+  cursor: pointer;
+}

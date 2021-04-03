@@ -1,9 +1,10 @@
 import React from 'react'
 
 /* Components */
-import MainMenuItem from './MainMenuItem'
+import NeoButton from './NeoButton'
 import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
+import DarkModeToggle from './DarkModeToggle'
 
 /* Images */
 import portfolio from '../images/portfolio.png';
@@ -35,6 +36,8 @@ export default function MainSection() {
         <>
         <div className="MainSection">
             <body className="App-body">
+              <DarkModeToggle />
+
                 {/* Avatar image */}
                 {/*<img className="Avatar" src={avatar} alt="MainMenuItem" /> // Profile image*/}
 
@@ -49,10 +52,10 @@ export default function MainSection() {
         
                 {/* Main menu items list */}
                 <div className="MainMenuList">
-                  <MainMenuItem image={profile} subtext="Profile" id="ProfileSection"/>
-                  <MainMenuItem image={portfolio} subtext="Projects" id="ProjectsSection"/>
-                  <MainMenuItem image={resume} subtext="Resume" link="/dl/Resume.pdf" target="_blank"/>
-                  <MainMenuItem image={contact} subtext="Contact" link="mailto:contact@caz-dev.com?subject=Contact from chaz.page" />
+                  <NeoButton image={profile} subtext="Profile" id="ProfileSection"/>
+                  <NeoButton image={portfolio} subtext="Projects" id="ProjectsSection"/>
+                  <NeoButton image={resume} subtext="Resume" link="/dl/Resume.pdf" target="_blank"/>
+                  <NeoButton image={contact} subtext="Contact" link="mailto:contact@caz-dev.com?subject=Contact from chaz.page" />
                 </div>
 
                 {/* Footer */}
