@@ -65,3 +65,11 @@ body.light-mode .projectContainer {
   box-shadow:  6px 6px 14px #bebebe,
       -6px -6px 14px #ffffff;
 }
+
+body.dark-mode .github {
+  color: rgb(240, 240, 240);
+}
+
+body.light-mode .github {
+  color: rgb(70, 70, 70);
+}

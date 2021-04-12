@@ -15,7 +15,7 @@ export default function ProjectCard( {project} ) {
             <div className="infoContainer">
                 <p className="projectTitle"> {project.title} </p>
                 <p className="projectDesc"> {project.description} </p>
-                <div className='hoverAnim'><a className='github' href={project.github}>{ github}</a></div>
+                <a className='github' href={project.github}>{ github}</a>
             </div>
         </div>
     )
