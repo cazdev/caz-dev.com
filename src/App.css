@@ -23,8 +23,8 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-left: 10vmin;
-  margin-right: 10vmin;
+  margin-left: 20vmin;
+  margin-right: 20vmin;
 }
 
 .ProjectsSection {
@@ -35,15 +35,15 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-left: 10vmin;
-  margin-right: 10vmin;
+  margin-left: 20vmin;
+  margin-right: 20vmin;
 }
 
 .ScrollToTop {
   height: calc(25px + 2vmin);
   width: calc(25px + 2vmin);
   bottom: 90vh;
-  right: 50vw;
+  right: calc(50vw - 3vmin);
   border: none;
   outline: none;
   border-radius: 50%;
@@ -55,10 +55,7 @@ html {
   align-items: center;
 }
 
-.ScrollToTop:hover { 
-  transform: scale(1.1); 
-}
-
+/* 
 .Avatar {
   float: left;
   margin-left: 20vmin;
@@ -66,11 +63,12 @@ html {
   margin-top: 2vmin;
   border-radius: 50%;
 }
+*/
 
 .MainMenuList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .icon {
@@ -90,9 +88,13 @@ html {
   }
 
   .MainMenuList {
+    /*
     display:block;
     flex-wrap: nowrap;
     justify-content: space-between;
+    */
+    margin-right: 10vmin;
+    margin-left: 10vmin;
   }
 
 }

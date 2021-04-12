@@ -1,0 +1,87 @@
+.projectContainer {
+    border-radius: 20px;
+    width: 75%;
+    margin: 3vmin 3vmin;
+    display: flex;
+}
+
+.imageContainer img {
+    float: left;
+    height: 100%;
+    width: 400px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.infoContainer {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size: calc(18px + 1vmin);
+    font-weight: 600;
+}
+
+.projectDesc {
+    font-size: calc(12px + 1vmin);
+}
+
+.github {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: calc(15px + 2vmin);
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .projectContainer {
+        float: top;
+        margin: 3vmin 3vmin;
+        display:grid;
+        width: 60%;
+    }
+    
+    .imageContainer img {
+        float: top;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .infoContainer {
+        margin-left: 0px;
+        margin-right: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .projectDesc {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .projectTitle {
+        font-size: calc(15px + 1vmin);
+        font-weight: 600;
+    }
+
+    .projectContainer {
+        width: 130%;
+    }
+}
+

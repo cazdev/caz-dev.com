@@ -1,3 +1,12 @@
+.darkModeToggle {
+  font-size: calc(24px + 1vmin);
+  cursor: pointer;
+  top: 0vh;
+  right: 5vw;
+  position:absolute;
+  cursor: pointer;
+}
+
 body.light-mode {
   background: #e0e0e0;
     color: rgb(70, 70, 70);
@@ -19,16 +28,16 @@ body.light-mode .icon {
 
 body.dark-mode .NeoButton {
   background: #363636;
-  box-shadow:  10px 10px 25px #2e2e2e,
-      -10px -10px 25px #3e3e3e;
+  box-shadow:  8px 10px 20px #2e2e2e,
+      -8px -8px 20px #3e3e3e;
   transition: background-color 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
 
 body.light-mode .NeoButton {
   background: #e0e0e0;
-  box-shadow:  10px 10px 25px #bebebe,
-      -10px -10px 25px #ffffff;
+  box-shadow:  8px 10px 20px #bebebe,
+  -8px -8px 20px #ffffff;
   transition: background-color 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
@@ -45,11 +54,14 @@ body.light-mode .ScrollToTop {
       -6px -6px 14px #ffffff;
 }
 
-.darkModeToggle {
-  font-size: calc(24px + 1vmin);
-  cursor: pointer;
-  top: 0vh;
-  right: 5vw;
-  position:absolute;
-  cursor: pointer;
+body.dark-mode .projectContainer {
+  background: #363636;
+  box-shadow:  6px 6px 14px #2e2e2e,
+      -6px -6px 14px #3e3e3e;
+}
+
+body.light-mode .projectContainer {
+  background: #e0e0e0;
+  box-shadow:  6px 6px 14px #bebebe,
+      -6px -6px 14px #ffffff;
 }

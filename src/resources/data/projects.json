@@ -1,0 +1,23 @@
+[
+    {
+        "title" : "CPass",
+        "description": "A password manager I made for personal use with 256 bit encryption, Memory encryption, Encrypted master password for encryption and great design",
+        "languages": "C# and C",
+        "github": "https://github.com/CazDev/CPass",
+        "image" : "https://camo.githubusercontent.com/f23f235fc12e23db8ef339792c3af59b6da489c03291bba4f3105cce6b5870ac/68747470733a2f2f692e6962622e636f2f4a7836334a324b2f756e6b6e6f776e2e706e67"
+    },
+    {
+        "title" : "WinCustom",
+        "description": "Customise your windows experience with an amazing User Interface! Toggle settings to customise Context Menus, Cortana, Control Panel, Start Menu and Taskbar",
+        "languages": "C#",
+        "github": "https://github.com/CazDev/WinCustom",
+        "image" : "https://camo.githubusercontent.com/d3676af91b340123035eabd9ffd0e3f6e44aef252b5a39844a466ca13f06b2b9/68747470733a2f2f692e6962622e636f2f4c43423867706a2f756e6b6e6f776e2d312e706e67"
+    },
+    {
+        "title" : "Contact Form",
+        "description": "A back end PHP contact form script with non-capcha spam detection, IP, operation system and browser logging.",
+        "languages": "PHP",
+        "github": "https://github.com/CazDev/Contact-Form-back-end",
+        "image" : "https://i.imgur.com/8RtA9mL.jpeg"
+    }
+]

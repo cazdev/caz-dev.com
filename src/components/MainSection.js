@@ -7,11 +7,11 @@ import MainFooter from './MainFooter'
 import DarkModeToggle from './DarkModeToggle'
 
 /* Images */
-import portfolio from '../images/portfolio.png';
-import profile from '../images/profile.png'
-import resume from '../images/resume.png'
-import contact from '../images/contact.png'
-/* import avatar from '../images/photo.png' */
+import portfolio from '../resources/images/portfolio.png';
+import profile from '../resources/images/profile.png'
+import resume from '../resources/images/resume.png'
+import contact from '../resources/images/contact.png'
+/* import avatar from '../resources/images/photo.png' */
 
 /* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,6 +34,7 @@ var company = "Interserv";
 export default function MainSection() {
     return (
         <>
+        {/* Main landing page */}
         <div className="MainSection">
             <body className="App-body">
               <DarkModeToggle />

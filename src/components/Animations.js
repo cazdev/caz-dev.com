@@ -20,7 +20,8 @@ window.onload = function(e) {
 
 export default function Animations() {
 
-    useEffect(() => {
+    /* Main page fade in from top */
+    useEffect(() => { 
         tl.from(
           '.inAnim', {
             y: 15, 
@@ -29,6 +30,7 @@ export default function Animations() {
             delay: 0.2 
           }, 'Start');
     
+        /* Main text fade in from bottom */
         tl.staggerFrom(
           '.textAnim', 1, {
             y: -30, 
@@ -36,6 +38,7 @@ export default function Animations() {
             ease: Power3.easeOut
           }, 0.1, 'Start');
     
+          /* Profile page fade in */
         gsap.from('.ProfileSection', {
           duration: 1, 
           y: '-80', 
@@ -50,6 +53,7 @@ export default function Animations() {
           }
         })
     
+        /* Projects page fade in */
         gsap.from('.ProjectsSection', {
           duration: 1, 
           y: '-80', 
@@ -64,6 +68,7 @@ export default function Animations() {
           }
         })
     
+        /* ScrollToTop button appears after scrolling into profile section */
         gsap.from('.ScrollToTop', {
           duration: 0.1, 
           y: '-100', 
