@@ -6,6 +6,8 @@ import '../styles/Timeline.css'
 import inLogo from '../resources/images/timeline/in.png'
 import hwLogo from '../resources/images/timeline/hw.png'
 import rydeLogo from '../resources/images/timeline/ryde.png'
+import alLogo from '../resources/images/timeline/al.png'
+import kfcLogo from '../resources/images/timeline/kfc.png'
 
 export default function Timeline() {
     return (
@@ -55,7 +57,7 @@ export default function Timeline() {
 
                 <VerticalTimelineElement
                     date="2018 - 2019"
-                    icon={ <img src={hwLogo} alt="logo icon"></img>}>
+                    icon={ <img src={alLogo} alt="logo icon"></img>}>
                     <h3 className="vertical-timeline-element-title">
                         Software Support Technician
                     </h3>
@@ -69,7 +71,7 @@ export default function Timeline() {
 
                 <VerticalTimelineElement
                     date="2017 - 2018"
-                    icon={ <img src={hwLogo} alt="logo icon"></img>}>
+                    icon={ <img src={kfcLogo} alt="logo icon"></img>}>
                     <h3 className="vertical-timeline-element-title">
                         IT Technician
                     </h3>

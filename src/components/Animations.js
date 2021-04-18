@@ -64,9 +64,9 @@ export default function Animations() {
           ease: 'ease-in', 
           scrollTrigger: {
             trigger: container, 
-            start: '-600',
-            end: '120%',
-            markers: true,
+            start: '-750',
+            end: '110%',
+            markers: false,
             toggleActions: 'restart none none reverse'
           }
         })

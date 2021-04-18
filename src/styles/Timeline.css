@@ -6,6 +6,7 @@
 .vertical-timeline-element-icon img{
     width: 90%;
     height: 90%;
+    margin-top: 3px;
 }
 
 .vertical-timeline-element-icon {
