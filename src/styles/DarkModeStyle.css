@@ -44,14 +44,14 @@ body.light-mode .NeoButton {
 
 body.dark-mode .ScrollToTop {
   background: #363636;
-  box-shadow:  6px 6px 14px #2e2e2e,
-      -6px -6px 14px #3e3e3e;
+  box-shadow:  5px 5px 12px #2e2e2e,
+      -5px -5px 12px #3e3e3e;
 }
 
 body.light-mode .ScrollToTop {
   background: #e0e0e0;
-  box-shadow:  6px 6px 14px #bebebe,
-      -6px -6px 14px #ffffff;
+  box-shadow:  5px 5px 12px #bebebe,
+      -5px -5px 12px #ffffff;
 }
 
 body.dark-mode .projectContainer {
@@ -72,4 +72,20 @@ body.dark-mode .github {
 
 body.light-mode .github {
   color: rgb(70, 70, 70);
+}
+
+body.dark-mode .vertical-timeline-element-content {
+  background: #363636;
+  box-shadow:  6px 6px 14px #2e2e2e,
+      -6px -6px 14px #3e3e3e;
+}
+
+body.light-mode .vertical-timeline-element-content {
+  background: #e0e0e0;
+  box-shadow:  6px 6px 14px #bebebe,
+      -6px -6px 14px #ffffff;
+}
+
+body.dark-mode .vertical-timeline-element-content-arrow {
+  border-right-color: #363636;
 }

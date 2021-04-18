@@ -23,8 +23,7 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-left: 20vmin;
-  margin-right: 20vmin;
+  margin: 20vmin;
 }
 
 .ProjectsSection {
@@ -35,8 +34,7 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-left: 20vmin;
-  margin-right: 20vmin;
+  margin: 20vmin;
 }
 
 .ScrollToTop {

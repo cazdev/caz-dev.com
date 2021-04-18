@@ -40,7 +40,7 @@ export default function Animations() {
     
           /* Profile page fade in */
         gsap.from('.ProfileSection', {
-          duration: 1, 
+          duration: 0.5, 
           y: '-80', 
           opacity: 0, 
           ease: 'ease-in', 
@@ -52,27 +52,31 @@ export default function Animations() {
             toggleActions: 'restart none none none'
           }
         })
-    
-        /* Projects page fade in */
-        gsap.from('.ProjectsSection', {
-          duration: 1, 
-          y: '-80', 
+
+        var containers = gsap.utils.toArray('.projectContainer');
+
+        containers.forEach((container) => {
+        /* Project items slide in */
+        gsap.from(container, {
+          duration: 0.5, 
+          x: '100', 
           opacity: 0, 
           ease: 'ease-in', 
           scrollTrigger: {
-            trigger: '.ProjectsSection', 
-            start: 'top 80%', 
-            end: 'bottom 20%',
-            markers: false,
-            toggleActions: 'restart none none none'
+            trigger: container, 
+            start: '-600',
+            end: '120%',
+            markers: true,
+            toggleActions: 'restart none none reverse'
           }
         })
+      })
     
         /* ScrollToTop button appears after scrolling into profile section */
         gsap.from('.ScrollToTop', {
           duration: 0.1, 
           y: '-100', 
-          opacity: 1, 
+          opacity: 0, 
           ease: 'ease-in', 
           scrollTrigger: {
             trigger: '.ProfileSection', 

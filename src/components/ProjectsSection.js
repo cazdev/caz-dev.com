@@ -9,7 +9,7 @@ export default function ProjectsSection() {
     return (
         /* Projects page */
         <div className="ProjectsSection">
-            <h2>Projects</h2>
+            <h2>My Projects</h2>
                 {/* Dynamically generate ProjectCard components from JSON data */}
                 {projects.map(project => <ProjectCard project={project} />)}
         </div>
