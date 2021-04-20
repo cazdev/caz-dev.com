@@ -1,7 +1,8 @@
 import React from 'react'
 
 /* Components */
-import NeoButton from './NeoButton'
+import NeoButtonLink from './NeoButtonLink'
+import NeoButtonScroll from './NeoButtonScroll'
 import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
 import DarkModeToggle from './DarkModeToggle'
@@ -53,10 +54,10 @@ export default function MainSection() {
         
                 {/* Main menu items list */}
                 <div className="MainMenuList">
-                  <NeoButton image={profile} subtext="Profile" id="ProfileSection"/>
-                  <NeoButton image={portfolio} subtext="Projects" id="ProjectsSection"/>
-                  <NeoButton image={resume} subtext="Resume" link="/dl/Resume.pdf" target="_blank"/>
-                  <NeoButton image={contact} subtext="Contact" link="mailto:contact@caz-dev.com?subject=Contact from chaz.page" />
+                  <NeoButtonScroll image={profile} subtext="Profile" id="ProfileSection"/>
+                  <NeoButtonScroll image={portfolio} subtext="Projects" id="ProjectsSection"/>
+                  <NeoButtonLink image={resume} subtext="Resume" link="/dl/Resume.pdf" target="_blank"/>
+                  <NeoButtonLink image={contact} subtext="Contact"  link="mailto:contact@caz-dev.com?subject=Hi Chaz!" />
                 </div>
 
                 {/* Footer */}

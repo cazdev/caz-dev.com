@@ -23,7 +23,9 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin: 20vmin;
+  padding-right:  30vmin;
+  padding-left:  30vmin;
+  padding-top: 10vmin;
 }
 
 .ProjectsSection {
@@ -34,18 +36,26 @@ html {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin: 20vmin;
+  padding-right:  30vmin;
+  padding-left:  30vmin;
+  padding-top: 10vmin;
+  padding-bottom: 10vmin;
+}
+
+.ProfileDesc {
+  padding-right:  20vmin;
+  padding-left:  20vmin;
 }
 
 .ScrollToTop {
+  position: fixed;
+  top: 10vmin;
+  left: calc(50%);
   height: calc(25px + 2vmin);
   width: calc(25px + 2vmin);
-  bottom: 90vh;
-  right: calc(50vw - 3vmin);
   border: none;
   outline: none;
   border-radius: 50%;
-  position: fixed;
   cursor: pointer;
   font-size: calc(8px + 2vmin);
   display: flex;
@@ -93,6 +103,26 @@ html {
     */
     margin-right: 10vmin;
     margin-left: 10vmin;
+  }
+
+  .ProfileDesc {
+    padding-right:  0vmin;
+    padding-left:  0vmin;
+  }
+
+  @media screen and (max-width: 850px) {
+    .ProfileSection {
+      padding-right:  10vmin;
+      padding-left:  10vmin;
+      padding-top: 10vmin;
+      padding-bottom: 10vmin;
+    }
+
+    .ProjectsSection {
+      padding-right:  20vmin;
+      padding-left:  20vmin;
+      padding-bottom: calc(20vmin + 80px);
+    }
   }
 
 }
