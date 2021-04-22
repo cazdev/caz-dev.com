@@ -1,6 +1,6 @@
 # Chaz.page React Portfolio
 
-This branch contains the react source code for the website [chaz.page](http://chaz.page) (gh-pages branch contains the packaged website)
+This branch contains the react source code for the website: [chaz.page](http://chaz.page) (The gh-pages branch contains the packaged website deployed with npm [gh-pages](https://www.npmjs.com/package/gh-pages))
 
 ## Available Scripts
 
