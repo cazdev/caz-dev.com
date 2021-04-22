@@ -1,6 +1,6 @@
 # Chaz.page React Portfolio
 
-##  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  This branch contains the react source code for this website (gh-pages branch contains the packaged website)
 
 ## Available Scripts
 
