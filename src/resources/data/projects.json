@@ -19,5 +19,12 @@
         "languages": "PHP",
         "github": "https://github.com/CazDev/Contact-Form-back-end",
         "image" : "https://i.imgur.com/8RtA9mL.jpeg"
+    },
+    {
+        "title" : "Greed Fear Index",
+        "description": "A simple email alert for market sentiment based on FGI (Fear Greed Index).",
+        "languages": "Go",
+        "github": "https://github.com/CazDev/GreedFearIndexAlert",
+        "image" : "https://i.imgur.com/bQB7YV7.jpg"
     }
 ]
