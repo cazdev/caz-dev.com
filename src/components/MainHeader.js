@@ -7,9 +7,9 @@ export default function MainHeader( {name, jobtitle, company, icon1, icon2, icon
           <h1 className="textAnim">{ name }</h1>
           <h2 className="textAnim">{ jobtitle } at <u>{ company }</u></h2>
             <div className="Social-Icons">
-              <span><a href="https://github.com/cazdev"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon1 }</div></a></span>
-              <span><a href="https://linkedin.com/in/chaz-lambrechtsen"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon2 }</div></a></span>
-              <span><a href="https://caz-dev.com"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon3 }</div></a></span>
+              <span className="Social-Icon"><a href="https://github.com/cazdev"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon1 }</div></a></span>
+              <span className="Social-Icon"><a href="https://linkedin.com/in/chaz-lambrechtsen"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon2 }</div></a></span>
+              <span className="Social-Icon"><a href="https://caz-dev.com"><div className={["icon", "hoverAnim", "inAnim"].join(' ')}>{ icon3 }</div></a></span>
             </div>
         </div>
     )
