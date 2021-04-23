@@ -4,7 +4,7 @@ import '../styles/NeoButton.css'
 export default function NeoButton( {image, subtext, link, target} ) {
     return (
         <div>
-        <div className="container">
+        <div className="neo-button-container">
             <a href={link} target={target}>
             <div className={["MenuItem", "hoverAnim", "inAnim"].join(' ')}>
                     <img src={image} className="NeoButton" alt="NeoButton" />

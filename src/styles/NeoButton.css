@@ -11,9 +11,14 @@
     padding: 1vmin;
   }
 
-  .container a {
+  .neo-button-container a {
     color: inherit; 
     text-decoration: none;
+  }
+
+  .neo-button-container img {
+    width: 350;
+    height: 350;
   }
 
 /* Responsive UI */
