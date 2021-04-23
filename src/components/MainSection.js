@@ -21,11 +21,14 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 /* Define icons */
 const envelope = <FontAwesomeIcon icon={faPaperPlane} />
 const marker = <FontAwesomeIcon icon={faMapMarker} />
 const github = <FontAwesomeIcon icon={faGithub} />
 const linkedin = <FontAwesomeIcon icon={faLinkedin} />
+const globe = <FontAwesomeIcon icon={faGlobe} />
 
 /* Information */
 var name = "Chaz L.";
@@ -50,6 +53,7 @@ export default function MainSection() {
                   company={ company }
                   icon1={ github } 
                   icon2={ linkedin }
+                  icon3={ globe }
                 />
         
                 {/* Main menu items list */}
