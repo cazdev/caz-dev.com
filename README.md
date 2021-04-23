@@ -1,4 +1,6 @@
-##  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chaz.page React Portfolio
+
+This branch contains the react source code for the website: [chaz.page](http://chaz.page) (The gh-pages branch contains the packaged website deployed with the npm package: [gh-pages](https://www.npmjs.com/package/gh-pages))
 
 ## Available Scripts
 
@@ -6,9 +8,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.
-
-The page will reload if you make edits.
+Runs the app in the development mode. The page will reload if you make edits.
 
 ### `npm run build`
 
