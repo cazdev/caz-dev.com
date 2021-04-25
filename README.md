@@ -1,4 +1,4 @@
-# caz-dev.com React Portfolio
+# React Portfolio - caz-dev.com 
 
 This branch contains the react source code for the website: [caz-dev.com](http://caz-dev.com) (The gh-pages branch contains the packaged website deployed with the npm package: [gh-pages](https://www.npmjs.com/package/gh-pages))
 
