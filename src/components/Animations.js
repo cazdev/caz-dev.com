@@ -66,7 +66,7 @@ export default function Animations() {
             trigger: container, 
             start: '-880',
             end: '0%',
-            markers: true,
+            markers: false,
             toggleActions: 'restart none none reverse'
           }
         })
