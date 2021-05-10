@@ -50,11 +50,9 @@ html {
 .ScrollToTop {
   position: fixed;
   top: 10vmin;
-  left: calc(50%);
+  left: calc(50% - 2.5vmin);
   height: calc(25px + 2vmin);
   width: calc(25px + 2vmin);
-  border: none;
-  outline: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: calc(8px + 2vmin);
