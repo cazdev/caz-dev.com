@@ -11,10 +11,10 @@ import DarkModeToggle from './DarkModeToggle'
 import '../styles/MainSection.css'
 
 /* Images */
-import portfolio from '../resources/images/portfolio.png';
-import profile from '../resources/images/profile.png'
-import resume from '../resources/images/resume.png'
-import contact from '../resources/images/contact.png'
+import portfolio from '../resources/images/menu/portfolio.png';
+import profile from '../resources/images/menu/profile.png'
+import resume from '../resources/images/menu/resume.png'
+import contact from '../resources/images/menu/contact.png'
 
 /* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
