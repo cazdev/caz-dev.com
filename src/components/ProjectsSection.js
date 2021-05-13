@@ -1,8 +1,12 @@
 import React from 'react'
-/* Projects data */
+
 import '../styles/ProjectCard.css'
+/* Projects data */
 import projects from '../resources/data/projects.json'
 import ProjectCard from '../components/ProjectCard'
+
+/* Styles */
+import '../styles/ProjectsSection.css'
 
 export default function ProjectsSection() {
 

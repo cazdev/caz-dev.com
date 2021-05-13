@@ -1,13 +1,13 @@
-import './App.css';
+import '../styles/App.css';
 
 /* Components */
-import MainSection from './components/MainSection'
-import ProjectsSection from './components/ProjectsSection';
-import ProfileSection from './components/ProfileSection';
-import ScrollToTop from './components/ScrollToTop'
+import MainSection from './MainSection'
+import ProjectsSection from './ProjectsSection';
+import ProfileSection from './ProfileSection';
+import ScrollToTop from './ScrollToTop'
 
 /* GSAP Animations */
-import Animations from './components/Animations'
+import Animations from '../util/Animations'
 
 function App() {
 

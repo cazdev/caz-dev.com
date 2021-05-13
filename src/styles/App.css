@@ -1,0 +1,41 @@
+/* Styling */
+
+html {
+  scroll-behavior: smooth;
+  overflow:auto;
+}
+
+.ScrollToTop {
+  position: fixed;
+  top: 10vmin;
+  left: calc(50%);
+  height: calc(25px + 2vmin);
+  width: calc(25px + 2vmin);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: calc(8px + 2vmin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  margin-top: 5vmin;
+  font-size: calc(2px + 2vmin);
+}
+
+/* Responsive UI */
+
+@media screen and (max-width: 1200px) {
+  @media screen and (max-width: 850px) {
+    .ProjectsSection {
+      padding-right:  20vmin;
+      padding-left:  20vmin;
+      padding-bottom: calc(20vmin + 80px);
+    }
+  }
+
+}

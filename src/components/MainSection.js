@@ -7,21 +7,27 @@ import MainHeader from './MainHeader'
 import MainFooter from './MainFooter'
 import DarkModeToggle from './DarkModeToggle'
 
+/* Styles */
+import '../styles/MainSection.css'
+
 /* Images */
 import portfolio from '../resources/images/portfolio.png';
 import profile from '../resources/images/profile.png'
 import resume from '../resources/images/resume.png'
 import contact from '../resources/images/contact.png'
-/* import avatar from '../resources/images/photo.png' */
 
 /* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 /* Icons */
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+/* Information */
+import {name, jobtitle, company} from '../util/Info';
 
 /* Define icons */
 const envelope = <FontAwesomeIcon icon={faPaperPlane} />
@@ -30,21 +36,15 @@ const github = <FontAwesomeIcon icon={faGithub} />
 const linkedin = <FontAwesomeIcon icon={faLinkedin} />
 const globe = <FontAwesomeIcon icon={faGlobe} />
 
-/* Information */
-var name = "Chaz L.";
-var jobtitle = "Software Engineer";
-var company = "Interserv";
-
 export default function MainSection() {
     return (
         <>
         {/* Main landing page */}
         <div className="MainSection">
             <body className="App-body">
-              <DarkModeToggle />
 
-                {/* Avatar image */}
-                {/*<img className="Avatar" src={avatar} alt="MainMenuItem" /> // Profile image*/}
+              {/* Dark mode toggle button */}
+              <DarkModeToggle />
 
                 {/* Title and tagline section */}
                 <MainHeader

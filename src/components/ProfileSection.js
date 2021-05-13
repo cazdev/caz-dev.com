@@ -1,5 +1,10 @@
 import React from 'react'
+
+/* Components */
 import Timeline from '../components/Timeline'
+
+/* Styles */
+import '../styles/ProfileSection.css'
 
 export default function ProfileSection( {company} ) {
     return (

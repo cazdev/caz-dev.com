@@ -2,6 +2,10 @@ import React from 'react'
 
 /* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+/* Styles */
+import '../styles/ProjectCard.css'
+
 /* Icons */
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const github = <FontAwesomeIcon icon={faGithub} />
