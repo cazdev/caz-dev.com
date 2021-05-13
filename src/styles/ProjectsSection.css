@@ -11,3 +11,13 @@
     padding-top: 10vmin;
     padding-bottom: 10vmin;
   }
+
+  /* Responsive UI */
+
+@media screen and (max-width: 850px) {
+    .ProjectsSection {
+        padding-right:  20vmin;
+        padding-left:  20vmin;
+        padding-bottom: calc(20vmin + 80px);
+    }
+}

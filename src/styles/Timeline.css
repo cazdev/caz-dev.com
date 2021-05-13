@@ -1,6 +1,7 @@
 .vertical-timeline-element-subtitle {
-    font-size: calc(3px + 2vmin);
-    font-weight: 500;
+    margin-top: 10px;
+    font-size: calc(10px + 2vmin);
+    font-weight: 400;
 }
 
 .vertical-timeline-element-icon img{

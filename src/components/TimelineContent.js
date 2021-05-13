@@ -7,7 +7,7 @@ export default function TimelineContent( {role, company, description} ) {
                 {role}
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-                {company}
+                @ {company}
             </h4>
             <p>
                 {description}

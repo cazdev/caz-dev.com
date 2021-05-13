@@ -5,6 +5,11 @@
     display: flex;
 }
 
+.vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p {
+    font-size: calc(12px + 1vmin) !important;
+    font-weight: 400 !important;
+}
+
 .imageContainer img {
     float: left;
     height: 100%;

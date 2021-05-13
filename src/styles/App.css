@@ -26,16 +26,3 @@ html {
   margin-top: 5vmin;
   font-size: calc(2px + 2vmin);
 }
-
-/* Responsive UI */
-
-@media screen and (max-width: 1200px) {
-  @media screen and (max-width: 850px) {
-    .ProjectsSection {
-      padding-right:  20vmin;
-      padding-left:  20vmin;
-      padding-bottom: calc(20vmin + 80px);
-    }
-  }
-
-}
