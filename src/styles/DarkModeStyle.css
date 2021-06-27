@@ -13,7 +13,7 @@ body.light-mode {
     transition: background-color 0.1s ease;
   }
 body.dark-mode {
-    background: #363636;
+    background: #2B2A33;
     color: rgb(240, 240, 240);
     transition: background-color 0.1s ease;
 }
@@ -27,25 +27,25 @@ body.light-mode .icon {
 }
 
 body.dark-mode .NeoButton {
-  background: #363636;
-  box-shadow:  8px 10px 20px #2e2e2e,
-      -8px -8px 20px #3e3e3e;
+  background: #2B2A33;
+  box-shadow:  10px 10px 20px #25242b,
+               -10px -10px 20px #31303b;
   transition: background-color 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
 
 body.light-mode .NeoButton {
   background: #e0e0e0;
-  box-shadow:  8px 10px 20px #bebebe,
+  box-shadow:  8px 8px 20px #bebebe,
   -8px -8px 20px #ffffff;
   transition: background-color 0.1s ease;
   transition: box-shadow 0.1s ease;
 }
 
 body.dark-mode .ScrollToTop {
-  background: #363636;
-  box-shadow:  5px 5px 12px #2e2e2e,
-      -5px -5px 12px #3e3e3e;
+  background: #2B2A33;
+  box-shadow:  5px 5px 12px #25242b,
+               -5px -5px 12px #31303b;
 }
 
 body.light-mode .ScrollToTop {
@@ -55,9 +55,9 @@ body.light-mode .ScrollToTop {
 }
 
 body.dark-mode .projectContainer {
-  background: #363636;
-  box-shadow:  6px 6px 14px #2e2e2e,
-      -6px -6px 14px #3e3e3e;
+  background: #2B2A33;
+  box-shadow:  5px 5px 12px #25242b,
+               -5px -5px 12px #31303b;
 }
 
 body.light-mode .projectContainer {
@@ -71,13 +71,13 @@ body.dark-mode .github {
 }
 
 body.light-mode .github {
-  color: rgb(70, 70, 70);
+  color: #31303b;
 }
 
 body.dark-mode .vertical-timeline-element-content {
-  background: #363636;
-  box-shadow:  6px 6px 14px #2e2e2e,
-      -6px -6px 14px #3e3e3e;
+  background: #2B2A33;
+  box-shadow:  5px 5px 12px #25242b,
+               -5px -5px 12px #31303b;
 }
 
 body.light-mode .vertical-timeline-element-content {
@@ -87,5 +87,5 @@ body.light-mode .vertical-timeline-element-content {
 }
 
 body.dark-mode .vertical-timeline-element-content-arrow {
-  border-right-color: #363636;
+  border-right-color: #2B2A33;
 }
