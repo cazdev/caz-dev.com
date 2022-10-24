@@ -24,7 +24,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
 /* Information */
 import {name, jobtitle, company} from '../util/Info';
@@ -34,7 +34,7 @@ const envelope = <FontAwesomeIcon icon={faPaperPlane} />
 const marker = <FontAwesomeIcon icon={faMapMarker} />
 const github = <FontAwesomeIcon icon={faGithub} />
 const linkedin = <FontAwesomeIcon icon={faLinkedin} />
-const globe = <FontAwesomeIcon icon={faGlobe} />
+const blogIcon = <FontAwesomeIcon icon={faCommentDots} />
 
 export default function MainSection() {
     return (
@@ -53,14 +53,14 @@ export default function MainSection() {
                   company={ company }
                   icon1={ github } 
                   icon2={ linkedin }
-                  icon3={ globe }
+                  icon3={ blogIcon }
                 />
         
                 {/* Main menu items list */}
                 <div className="MainMenuList">
-                  <NeoButtonScroll image={profile} subtext="Profile" id="ProfileSection"/>
+                  <NeoButtonScroll image={profile} subtext="Experience" id="ProfileSection"/>
                   <NeoButtonScroll image={portfolio} subtext="Projects" id="ProjectsSection"/>
-                  <NeoButtonLink image={resume} subtext="Resume" link="/dl/Resume.pdf" target="_blank"/>
+                  <NeoButtonLink image={resume} subtext="Resume" link="https://drive.google.com/u/0/uc?id=18PNVOmApvbXoYA6aPAOkw3UCfQelI_bn" rel="noreferrer" target="_blank"/>
                   <NeoButtonLink image={contact} subtext="Contact"  link="mailto:contact@caz-dev.com?subject=Hi Chaz!" />
                 </div>
 

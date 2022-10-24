@@ -13,18 +13,31 @@ import inLogo from '../resources/images/timeline/in.png'
 import hwLogo from '../resources/images/timeline/hw.png'
 import rydeLogo from '../resources/images/timeline/ryde.png'
 import alLogo from '../resources/images/timeline/al.png'
-import kfcLogo from '../resources/images/timeline/kfc.png'
+import plannLogo from '../resources/images/timeline/plann.png'
 
 export default function Timeline() {
     return (
         <div>
             <VerticalTimeline>
+
+            <VerticalTimelineElement
+                    date="2022 - Current"
+                    icon={ <img src={plannLogo} alt="logo icon"></img>}>
+                        <TimelineContent
+                            role="Front-end Software Engineer"
+                            company="Plannthat.com"
+                            description="Developing software for Sydney Trains, Australian defence force 
+                            and other projects including leading front-end development of screens and interactive 
+                            kiosks at train stations for Sydney Trains."
+                        />
+                </VerticalTimelineElement>
+
                 <VerticalTimelineElement
-                    date="2021 - Present"
+                    date="2021 - 2022"
                     icon={ <img src={inLogo} alt="logo icon"></img>}>
                         <TimelineContent
-                            role="Software Engineer"
-                            company="Interserv" 
+                            role="Full-stack Software Engineer"
+                            company="Interserv"
                             description="Developing software for Sydney Trains, Australian defence force 
                             and other projects including leading front-end development of screens and interactive 
                             kiosks at train stations for Sydney Trains."
@@ -50,7 +63,7 @@ export default function Timeline() {
                             role="IT Analyst & Engineer"
                             company="Holman Webb" 
                             description="Deployed and Maintained Enterprise AI cyber security software 
-                            (www.darktrace.com) and MFA Security Software (duo.com) across the firm in 
+                            (darktrace.com) and MFA Security Software (duo.com) across the firm in 
                             offices around Australia"
                         />
                 </VerticalTimelineElement>
@@ -64,18 +77,6 @@ export default function Timeline() {
                             description="Install and configure appropriate software and functions 
                             according to specifications. Develop and maintain local networks in ways that 
                             optimize performance. Perform troubleshooting to diagnose and resolve problems"
-                        />
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    date="2017 - 2018"
-                    icon={ <img src={kfcLogo} alt="logo icon"></img>}>
-
-                        <TimelineContent 
-                            role="IT Technician"
-                            company="KFC" 
-                            description="Communicating with customers through various channels. Setting up IT 
-                            equipment on premesis. Resolving Software and Hardware related problems"
                         />
                 </VerticalTimelineElement>
 
