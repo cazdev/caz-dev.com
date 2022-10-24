@@ -4,7 +4,7 @@ import React from 'react'
 import Timeline from '../components/Timeline'
 
 /* Styles */
-import '../styles/ProfileSection.css'
+import './ProfileSection.css'
 
 export default function ProfileSection( {company} ) {
     return (

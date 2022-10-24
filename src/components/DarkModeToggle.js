@@ -2,7 +2,7 @@ import React from 'react';
 import useDarkMode from 'use-dark-mode';
 
 /* Styles for dark and light mode switching */
-import '../styles/DarkModeStyle.css';
+import './DarkModeStyle.css';
 
 /* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

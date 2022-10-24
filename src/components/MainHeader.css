@@ -1,0 +1,32 @@
+.App-header {
+    font-size: calc(20px + 2vmin);
+    /*margin-right: 20vmin; // pad right side*/
+    margin-bottom: 8vmin;
+  }
+  
+ h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+
+  h2 {
+    font-size: calc(20px + 2vmin);
+  }
+
+  .Social-Icons span .icon {
+    font-size: calc(11px + 2vmin);
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .App-header {
+      font-size: calc(15px + 2vmin);
+      padding-bottom: 2vmin;
+      margin-right: 0px;
+    }
+
+    h2 {
+      font-size: calc(15px + 2vmin);
+    }
+}

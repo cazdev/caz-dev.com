@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/MainHeader.css'
+import './MainHeader.css'
 
 export default function MainHeader( {name, jobtitle, company, icon1, icon2, icon3} ) {
     return (

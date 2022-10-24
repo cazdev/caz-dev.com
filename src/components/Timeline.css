@@ -1,0 +1,22 @@
+.vertical-timeline-element-subtitle {
+    margin-top: 10px;
+    font-size: calc(10px + 2vmin);
+    font-weight: 400;
+}
+
+.vertical-timeline-element-icon img{
+    width: 90%;
+    height: 90%;
+    margin-top: 3px;
+}
+
+.vertical-timeline-element-icon {
+    background: rgb(21, 197, 175);
+}
+
+@media screen and (min-width: 1171px) {
+    .vertical-timeline-element-date {
+        margin-left: -9vw;
+        margin-right: 1vw;
+    }
+}

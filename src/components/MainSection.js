@@ -8,7 +8,7 @@ import MainFooter from './MainFooter'
 import DarkModeToggle from './DarkModeToggle'
 
 /* Styles */
-import '../styles/MainSection.css'
+import './MainSection.css'
 
 /* Images */
 import portfolio from '../resources/images/menu/portfolio.png';

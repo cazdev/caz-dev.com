@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/NeoButton.css'
+import './NeoButton.css'
 
 export default function NeoButton( {image, subtext, link, target} ) {
     return (

@@ -1,0 +1,14 @@
+.App-Footer span {
+    display: inline-block;
+    margin-top: 5vmin;
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+    font-size: calc(5px + 2vmin);
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .App-Footer span {
+        margin-bottom: 10vmin;
+    }
+  }

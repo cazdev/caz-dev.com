@@ -2,7 +2,7 @@ import React from 'react'
 
 /* Styles */
 import 'react-vertical-timeline-component/style.min.css';
-import '../styles/Timeline.css'
+import './Timeline.css'
  
 /* Components */
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';

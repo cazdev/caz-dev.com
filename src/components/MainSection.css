@@ -1,0 +1,45 @@
+.MainSection {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+
+  /* 
+.Avatar {
+  float: left;
+  margin-left: 20vmin;
+  height: 35vmin;
+  margin-top: 2vmin;
+  border-radius: 50%;
+}
+*/
+
+.MainMenuList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    .Avatar {
+      float: none;
+      margin-left: 0px;
+      height: 40vmin;
+    }
+  
+    .MainMenuList {
+      /*
+      display:block;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      */
+      margin-right: 10vmin;
+      margin-left: 10vmin;
+    }
+  
+  }

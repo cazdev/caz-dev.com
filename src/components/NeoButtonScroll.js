@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/NeoButton.css'
+import './NeoButton.css'
 import {Link} from 'react-scroll'
 
 export default function NeoButton( {image, subtext, id} ) {

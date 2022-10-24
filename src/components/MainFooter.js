@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/MainFooter.css'
+import './MainFooter.css'
 
 export default function MainFooter( {icon1, icon2} ) {
     return (
