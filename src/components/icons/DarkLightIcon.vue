@@ -9,6 +9,7 @@ const toggleDarkMode = () => {
         r.style.setProperty('--background-shade-primary', 'var(--background-lighter-primary)');
         r.style.setProperty('--background-shade-secondary', 'var(--background-lighter-secondary)');
         r.style.setProperty('--background-color', 'var(--white)');
+        r.style.setProperty('--background-color-transparent', 'var(--white-transparent)');
         r.style.setProperty('--color-text', 'var(--text-light)');
     } else {
         window.localStorage.setItem('dark-mode', 'true')
@@ -17,6 +18,7 @@ const toggleDarkMode = () => {
         r.style.setProperty('--background-shade-primary', 'var(--background-darker-primary)');
         r.style.setProperty('--background-shade-secondary', 'var(--background-darker-secondary)');
         r.style.setProperty('--background-color', 'var(--black)');
+        r.style.setProperty('--background-color-transparent', 'var(--black-transparent)');
         r.style.setProperty('--color-text', 'var(--text-dark)');
     }
 }
