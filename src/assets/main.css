@@ -1,0 +1,23 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: 0.3s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

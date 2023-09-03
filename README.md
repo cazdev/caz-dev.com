@@ -1,23 +1,35 @@
-# React Portfolio - caz-dev.com 
+# vue-project
 
-This branch contains the react source code for the website: [caz-dev.com](http://caz-dev.com) (The gh-pages branch contains the packaged website deployed with the npm package: [gh-pages](https://www.npmjs.com/package/gh-pages))
+This template should help get you started developing with Vue 3 in Vite.
 
-## Available Scripts
+## Recommended IDE Setup
 
-In the project directory, you can run:
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-### `npm start`
+## Customize configuration
 
-Runs the app in the development mode. The page will reload if you make edits.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-### `npm run build`
+## Project Setup
 
-Create an optimised build ready for production
+```sh
+npm install
+```
 
-### `npm install gh-pages --save-dev`
+### Compile and Hot-Reload for Development
 
-Install github pages deployment for react
+```sh
+npm run dev
+```
 
-### `npm run deploy`
+### Compile and Minify for Production
 
-Deploy it to GitHub Pages.
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
