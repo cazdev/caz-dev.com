@@ -3,7 +3,7 @@
         <rect fill='#C00000' width='2000' height='1500'/>
         <defs>
             <radialGradient id='a' gradientUnits='objectBoundingBox'>
-                <stop  offset='0' stop-color='var(--background-shade-primary)'/>
+                <stop  offset='0' stop-color='color-mix(in srgb,var(--background-primary),var(--background-shade-primary) 50%)'/>
                 <stop  offset='1' stop-color='var(--background-shade-secondary)'/>
             </radialGradient>
             <linearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'>

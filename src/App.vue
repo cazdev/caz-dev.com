@@ -17,6 +17,7 @@ import ResumeIcon from './components/icons/ResumeIcon.vue'
 import ContactIcon from './components/icons/ContactIcon.vue'
 import PaletteIcon from './components/icons/PaletteIcon.vue'
 import DarkLightIcon from './components/icons/DarkLightIcon.vue'
+import Timeline from './components/Timeline.vue'
 
 const neo1 = ref(null)
 const neo2 = ref(null)
@@ -61,7 +62,7 @@ onMounted(() => {
   <CircleBackground v-if="true" />
   <MountainBackground v-if="true"/>
 
-  <header>
+  <header class="reveal">
     <div class="name">
       {{ name }}
     </div>
@@ -91,7 +92,11 @@ onMounted(() => {
 
   <div class="profile-container">
     <Summary />
+
+    <Timeline />
   </div>
+
+
 </template>
 
 <style scoped>
@@ -110,6 +115,11 @@ header {
 .tagline {
   font-size: 2.5rem;
 }
+.neobuttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 700px) {
   .name {
     font-size: 3.3rem;
@@ -118,10 +128,5 @@ header {
   .tagline {
     font-size: 1.7rem;
   }
-}
-.neobuttons-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 </style>

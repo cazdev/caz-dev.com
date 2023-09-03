@@ -1,0 +1,38 @@
+[
+    {
+        "title" : "Front-end Software Engineer",
+        "subtitle": "Service NSW",
+        "description": "Developing a secure, fast, framework agnostic JavaScript component library for mapping and spacial services.",
+        "year": "2023 - Current"
+    },
+    {
+        "title" : "Front-end Software Engineer",
+        "subtitle": "Plannthat.com",
+        "description": "Developing software for Sydney Trains, Australian defence force and other projects including leading front-end development of screens and interactive kiosks at train stations for Sydney Trains.",
+        "year": "2022 - 2023"
+    },
+    {
+        "title" : "Full-stack Software Engineer",
+        "subtitle": "Interserv",
+        "description": "Developing software for Sydney Trains, Australian defence force and other projects including leading front-end development of screens and interactive kiosks at train stations for Sydney Trains.",
+        "year": "2020 - 2022"
+    },
+    {
+        "title" : "Product Development Software Engineer",
+        "subtitle": "City of Ryde",
+        "description": "Optimising the outcome of our multi-unit dwelling food-waste collection trial. During a 6 month timeline I have worked in a team of 8 engineers to develop a product solution for the trial.",
+        "year": "2019 - 2020"
+    },
+    {
+        "title": "IT Analyst & Engineer",
+        "subtitle": "Holman Webb",
+        "description": "Deployed and Maintained Enterprise AI cyber security software (darktrace.com) and MFA Security Software (duo.com) across the firm in offices around Australia",
+        "year": "2018 - 2019"
+    },
+    {
+        "title": "Software Support Technician",
+        "subtitle": "Animal Logic",
+        "description": "Install and configure appropriate software and functions according to specifications. Develop and maintain local networks in ways that optimize performance. Perform troubleshooting to diagnose and resolve problems",
+        "year": "2017 - 2018"
+    }
+]

@@ -36,12 +36,6 @@ svg {
     cursor: pointer;
     transition: all .2s;
 }
-@media screen and (max-width: 700px) {
-    svg {
-        width: 1.8em;
-        height: 1.8em;
-    }
-}
 svg:hover {
     transform: scale(1.2);
 }
@@ -50,5 +44,11 @@ svg:hover {
 }
 .alt-stop {
   stop-color: var(--pallet-button-secondary);
+}
+@media screen and (max-width: 700px) {
+    svg {
+        width: 1.8em;
+        height: 1.8em;
+    }
 }
 </style>

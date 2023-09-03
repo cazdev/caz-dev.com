@@ -13,9 +13,9 @@
 
 .reveal{
   position: relative;
-  transform: translateY(80px);
+  transform: translateY(60px);
   opacity: 0;
-  transition: 0.3s all ease;
+  transition: 0.4s all ease;
 }
 .reveal.active{
   transform: translateY(0);

@@ -48,15 +48,15 @@ a.neobutton-container {
 }
 @media screen and (max-width: 700px) {
   .neobutton-container .text-below {
-  font-size: 1.2rem;
-}
-.neobutton {
-  padding: 1.5em;
-}
-a.neobutton-container {
-  padding: 1em;
-  width: 15vmax;
+    font-size: 1.2rem;
+  }
+  .neobutton {
+    padding: 1.5em;
+  }
+  a.neobutton-container {
+    padding: 1em;
+    width: 15vmax;
     height: 15vmax;
-}
+  }
 }
 </style>

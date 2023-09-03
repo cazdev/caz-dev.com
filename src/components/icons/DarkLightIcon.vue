@@ -65,13 +65,13 @@ svg {
     transition: all .2s;
     fill: var(--color-text);
 }
+svg:hover {
+    transform: scale(1.2);
+}
 @media screen and (max-width: 700px) {
     svg {
         width: 1.8em;
         height: 1.8em;
     }
-}
-svg:hover {
-    transform: scale(1.2);
 }
 </style>
