@@ -16,13 +16,23 @@ defineProps({
   </a>
 </template>
 
+<style>
+.neobutton-container .neobutton svg {
+  transition: all 0.2s;
+}
+.neobutton-container:hover .neobutton svg 
+{
+  transform: scale(1.2);
+}
+</style>
+
 <style scoped>
 a.neobutton-container {
   padding: 2.2em;
   margin-bottom: 2em;
   transition: all 0.2s;
-  width: 30vmin;
-  height: 30vmin;
+  width: 14.5em;
+  height: 14.5em;
   background: unset;
   color: unset;
   text-decoration: none;
@@ -55,8 +65,8 @@ a.neobutton-container {
   }
   a.neobutton-container {
     padding: 1em;
-    width: 15vmax;
-    height: 15vmax;
+    width: 8em;
+    height: 8em;
   }
 }
 </style>

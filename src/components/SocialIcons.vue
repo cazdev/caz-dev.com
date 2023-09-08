@@ -1,9 +1,10 @@
 
 <script setup>
-import { github, linkedin } from '@/constants'
+    import { github, linkedin } from '@/constants'
     const openGithub = () => window.open(github);
     const openLinkedin = () => window.open(linkedin);
 </script>
+
 <template>
 
     <div class="social-icons-container">

@@ -11,6 +11,10 @@
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .reveal{
   position: relative;
   transform: translateY(60px);
@@ -20,4 +24,11 @@
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+.main-stop {
+  stop-color: var(--primary);
+}
+.alt-stop {
+  stop-color: var(--secondary);
 }

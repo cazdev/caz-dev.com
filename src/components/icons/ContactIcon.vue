@@ -13,10 +13,4 @@ svg {
     height: 100%;
     width: 100%;
 }
-.main-stop {
-  stop-color: var(--primary);
-}
-.alt-stop {
-  stop-color: var(--secondary);
-}
 </style>

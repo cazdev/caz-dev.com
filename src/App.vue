@@ -1,10 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { company, role, name } from '@/constants'
+import { company, role, name, email, resume } from '@/constants'
 import contact from '@/assets/contact.png'
 import portfolio from '@/assets/portfolio.png'
 import profile from '@/assets/profile.png'
-import resume from '@/assets/resume.png'
+import resumeIcon from '@/assets/resume.png'
 import NeoButton from '@/components/NeoButton.vue'
 import SocialIcons from './components/SocialIcons.vue'
 import FooterInfo from './components/FooterInfo.vue'
@@ -38,6 +38,11 @@ const reveal = () => {
     }
   }
 }
+
+const profileElement = ref(null)
+const experienceElement = ref(null)
+const scrollToProfile = () => profileElement.value.scrollIntoView({ behavior: "smooth" });
+const scrollToExperience = () => experienceElement.value.scrollIntoView({ behavior: "smooth" });
 
 onMounted(() => {
   window.addEventListener("scroll", reveal);
@@ -74,25 +79,24 @@ onMounted(() => {
   <SocialIcons />
 
   <div class="neobuttons-container">
-    <NeoButton ref="neo1" :image="profile" text="Profile">
+    <NeoButton ref="neo1" :image="profile" text="Profile" @click="scrollToProfile">
       <ProfileIcon />
     </NeoButton>
-    <NeoButton ref="neo2" :image="portfolio" text="Projects">
+    <NeoButton ref="neo2" :image="portfolio" text="Projects" @click="scrollToExperience">
       <SuitcaseIcon />
     </NeoButton>
-    <NeoButton ref="neo3" :image="resume" text="Resume" link="https://drive.google.com/file/d/1NAfv29HfhlEzWiF6YJO0E1EEMBmDiPDD/preview">
+    <NeoButton ref="neo3" :image="resumeIcon" text="Resume" :link="resume">
       <ResumeIcon />
     </NeoButton>
-    <NeoButton ref="neo4" :image="contact" text="Contact" link="mailto: contact@caz-dev.com?subject=Contact%20from%20caz-dev.com">
+    <NeoButton ref="neo4" :image="contact" text="Contact" :link="`mailto: ${email}?subject=Contact%20from%20your%20website`">
       <ContactIcon />
     </NeoButton>
   </div>
 
   <FooterInfo />
 
-  <div class="profile-container">
+  <div class="profile-container" ref="profileElement">
     <Summary />
-
     <Timeline />
   </div>
 
