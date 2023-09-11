@@ -18,6 +18,8 @@ import ContactIcon from './components/icons/ContactIcon.vue'
 import PaletteIcon from './components/icons/PaletteIcon.vue'
 import DarkLightIcon from './components/icons/DarkLightIcon.vue'
 import Timeline from './components/Timeline.vue'
+import experience from './assets/experience.json'
+import qualifications from './assets/qualifications.json'
 
 const neo1 = ref(null)
 const neo2 = ref(null)
@@ -79,7 +81,7 @@ onMounted(() => {
   <SocialIcons />
 
   <div class="neobuttons-container">
-    <NeoButton ref="neo1" :image="profile" text="Profile" @click="scrollToProfile">
+    <NeoButton ref="neo1" :image="profile" text="About Me" @click="scrollToProfile">
       <ProfileIcon />
     </NeoButton>
     <NeoButton ref="neo2" :image="portfolio" text="Projects" @click="scrollToExperience">
@@ -97,7 +99,10 @@ onMounted(() => {
 
   <div class="profile-container" ref="profileElement">
     <Summary />
-    <Timeline />
+    <div ref="experienceElement">
+      <Timeline title="Experience" :data="experience" />
+      <Timeline title="Qualifications" :data="qualifications" />
+    </div>
   </div>
 
 

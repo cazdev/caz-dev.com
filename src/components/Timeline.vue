@@ -1,14 +1,17 @@
 <script setup>
-import experience from '../assets/experience.json'
+defineProps({
+    data: Array,
+    title: String
+})
 </script>
 
 <template>
-    <div class="title reveal" ref="experienceElement">Experience</div>
+    <div class="title reveal">{{title}}</div>
     <div class="timeline">
-        <div v-for="x in experience" class="wrapper-item reveal">
+        <div v-for="x in data" class="wrapper-item reveal">
             <div class="section-year">
-                <p class="year-start">{{ x.yearStart }}</p>
                 <p class="year-end">{{ x.yearEnd }}</p>
+                <p class="year-start">{{ x.yearStart }}</p>
             </div>
             <section class="timeline-item">
                 <div class="item">

@@ -1,11 +1,11 @@
 <script setup>
-import { name, location, company, role } from '@/constants'
+import { name, description } from '@/constants'
 </script>
 
 <template>
     <div class="profile-summary reveal">
         <div class="title">Hi, I am {{ name }} <span class="wave">👋</span></div>
-        <div class="description">I'm a <span class="bold">{{ role }}</span> with 5 years of experience located in <span class="bold">{{location}}</span> and currently employed at <span class="bold">{{company}}</span>. I'm passionate about creating scalable, clean code and enjoy collaborating with diverse teams.</div>
+        <div class="description">{{ description }}</div>
     </div>
   </template>
 
