@@ -99,4 +99,11 @@ defineProps({
     padding: 20px 0 20px 25px;
     position: relative;
 }
+
+@media screen and (max-width: 700px) {
+    .description-item {
+    display: none;
+}
+}
+
 </style>

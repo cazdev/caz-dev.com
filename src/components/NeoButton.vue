@@ -22,7 +22,7 @@ defineProps({
 }
 .neobutton-container:hover .neobutton svg 
 {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 </style>
 
@@ -31,8 +31,8 @@ a.neobutton-container {
   padding: 2.2em;
   margin-bottom: 2em;
   transition: all 0.2s;
-  width: 14.5em;
-  height: 14.5em;
+  width: 15em;
+  height: 15em;
   background: unset;
   color: unset;
   text-decoration: none;

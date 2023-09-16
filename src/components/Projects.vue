@@ -27,8 +27,8 @@
   margin-bottom: 0.5em;
 }
 .description {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 500;
   margin-bottom: 1em;
 }
 svg {
@@ -40,11 +40,10 @@ svg {
   right: 0;
 }
 .item {
-  position: relative;
-  margin: 0.6em;
+  padding: 2em 1em;
 }
 .image, .item {
-  border-radius: 1em;
+  border-radius: 2em;
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -52,16 +51,10 @@ svg {
   width: 100%;
   transition: all 0.2s;
   cursor: pointer;
-}
-.image:hover {
-    opacity: 0.2;
+  opacity: 0.9;
 }
 .content:hover + .image, .image:hover {
-  opacity: 0.2;
-}
-.item svg:hover + .image {
-  opacity: 0.2;
-  background-color: red;
+  opacity: 0.1;
 }
 .item .content, .item svg {
   opacity: 0;
@@ -96,8 +89,8 @@ svg {
   .container {
     margin: 0 2em;
   }
-  .content {
-    padding: 2em;
-  }
+  .image, .item {
+  height: 30em !important;
+}
 }
 </style>

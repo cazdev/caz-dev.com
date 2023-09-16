@@ -13,6 +13,7 @@ import { email, location } from '@/constants'
 
 <style scoped>
     .footer-info-container {
+        font-size: 1.1em;
         display: flex;
         justify-content: center;
         margin: 5em 0;
