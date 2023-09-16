@@ -3,8 +3,16 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
+  margin-bottom: 10em;
   padding: 2rem;
   font-weight: normal;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10rem 0 2em 0 ;
+  text-align: center;
 }
 
 .underline {
@@ -15,13 +23,24 @@
   font-weight: bold;
 }
 
-.reveal{
+.reveal-pop {
+  position: relative;
+  transform: scale(2.5);
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+.reveal-pop.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.reveal {
   position: relative;
   transform: translateY(60px);
   opacity: 0;
   transition: 0.4s all ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }

@@ -18,6 +18,8 @@ import ContactIcon from './components/icons/ContactIcon.vue'
 import PaletteIcon from './components/icons/PaletteIcon.vue'
 import DarkLightIcon from './components/icons/DarkLightIcon.vue'
 import Timeline from './components/Timeline.vue'
+import Projects from './components/Projects.vue'
+
 import experience from './assets/experience.json'
 import qualifications from './assets/qualifications.json'
 
@@ -28,7 +30,7 @@ const neo4 = ref(null)
 const neoButtons = [neo1, neo2, neo3, neo4]
 
 const reveal = () => {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll(".reveal, .reveal-pop");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
@@ -42,9 +44,9 @@ const reveal = () => {
 }
 
 const profileElement = ref(null)
-const experienceElement = ref(null)
+const projectsElement = ref(null)
 const scrollToProfile = () => profileElement.value.scrollIntoView({ behavior: "smooth" });
-const scrollToExperience = () => experienceElement.value.scrollIntoView({ behavior: "smooth" });
+const scrollToExperience = () => projectsElement.value.scrollIntoView({ behavior: "smooth" });
 
 onMounted(() => {
   window.addEventListener("scroll", reveal);
@@ -99,10 +101,15 @@ onMounted(() => {
 
   <div class="profile-container" ref="profileElement">
     <Summary />
-    <div ref="experienceElement">
+    <div>
       <Timeline title="Experience" :data="experience" />
       <Timeline title="Qualifications" :data="qualifications" />
     </div>
+  </div>
+
+  <div class="projects-container" ref="projectsElement">
+    <div class="title reveal">Projects</div>
+    <Projects />
   </div>
 
 

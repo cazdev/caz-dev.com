@@ -15,8 +15,8 @@ defineProps({
             </div>
             <section class="timeline-item">
                 <div class="item">
-                    <span class="dot-start"></span>
-                    <span class="dot-end"></span>
+                    <span class="dot-start reveal-pop"></span>
+                    <span class="dot-end reveal-pop"></span>
                     <h3 class="date-item">{{ x.title }}</h3>
                     <h4 class="title-item">{{ x.subtitle }}</h4>
                     <p class="description-item">
@@ -29,12 +29,6 @@ defineProps({
 </template>
 
 <style scoped>
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 2rem 0;
-  text-align: center;
-}
 .timeline {
     margin: 5em auto;
     text-align: left;
@@ -58,6 +52,14 @@ defineProps({
     display: grid;
     grid-template-columns: 100px 1fr;
     margin-bottom: 2em;
+}
+.description-item {
+    height: 2em;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.wrapper-item:hover .description-item {
+    height: 5em;
 }
 .timeline .wrapper-item .section-year {
     display: flex;
