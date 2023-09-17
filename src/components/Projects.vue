@@ -34,7 +34,7 @@
 svg {
   width: 2em;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   margin: auto;
   left: 0;
   right: 0;
@@ -47,7 +47,7 @@ svg {
   background-size: cover;
   background-position: center;
   display: inline-block;
-  height: 24em;
+  height: 26em;
   width: 100%;
   transition: all 0.2s;
   cursor: pointer;
@@ -77,20 +77,23 @@ svg {
   height: 100%;
 }
 .item:nth-child(2n), .item:nth-child(2n) .image {
-    height: 26em;
+    height: 28em;
 }
 .item:nth-child(3n), .item:nth-child(3n) .image {
-  height: 28em;
+  height: 22em;
 }
 .item:nth-child(4n), .item:nth-child(4n) .image {
-  height: 22em;
+  height: 26em;
 }
 @media screen and (max-width: 700px) {
   .container {
-    margin: 0 2em;
+    margin: 0;
   }
   .image, .item {
   height: 30em !important;
+}
+.item {
+    padding: 1em 0.5em;
 }
 }
 </style>

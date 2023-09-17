@@ -30,9 +30,6 @@ const randomTheme = () => {
 svg {
     height: 1.9em;
     width: 1.9em;
-    position: absolute;
-    top: 2em;
-    right: 6em;
     cursor: pointer;
     transition: all .2s;
 }

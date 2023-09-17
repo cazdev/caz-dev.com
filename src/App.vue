@@ -65,8 +65,10 @@ onMounted(() => {
 
 <template>
 
+<div class="top-icon-menu">
   <PaletteIcon />
   <DarkLightIcon />
+</div>
   
   <CircleBackground v-if="true" />
   <MountainBackground v-if="true"/>
@@ -92,7 +94,7 @@ onMounted(() => {
     <NeoButton ref="neo3" :image="resumeIcon" text="Resume" :link="resume">
       <ResumeIcon />
     </NeoButton>
-    <NeoButton ref="neo4" :image="contact" text="Contact" :link="`mailto: ${email}?subject=Contact%20from%20your%20website`">
+    <NeoButton ref="neo4" :image="contact" text="Contact" :link="`mailto: ${email}?subject=Contact%20from%20caz-dev.com`">
       <ContactIcon />
     </NeoButton>
   </div>
@@ -116,6 +118,13 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.top-icon-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.top-icon-menu svg {
+  margin: 0 0.75em;
+}
 .profile-container {
   margin: 0 auto;
   max-width: 800px;

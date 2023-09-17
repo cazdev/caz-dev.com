@@ -56,12 +56,9 @@ onMounted(() => {
 
 <style scoped>
 svg {
+    cursor: pointer;
     height: 2em;
     width: 2em;
-    position: absolute;
-    top: 2em;
-    right: 2em;
-    cursor: pointer;
     transition: all .2s;
     fill: var(--color-text);
 }

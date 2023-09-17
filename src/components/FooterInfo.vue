@@ -16,7 +16,7 @@ import { email, location } from '@/constants'
         font-size: 1.1em;
         display: flex;
         justify-content: center;
-        margin: 5em 0;
+        margin: 3em 0;
         align-items: center;
         cursor: default;
     }

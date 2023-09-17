@@ -51,7 +51,7 @@ defineProps({
 .timeline .wrapper-item {
     display: grid;
     grid-template-columns: 100px 1fr;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 .description-item {
     height: 2em;

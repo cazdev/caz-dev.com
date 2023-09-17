@@ -22,12 +22,6 @@
 .bold {
   font-weight: bold;
 }
-
-/* .reveal-pop {
-  position: relative;
-  transform: scale(2);
-  transition: 0.4s all ease-in-out;
-} */
 .reveal-pop.active {
   transform: scale(1);
   opacity: 1;
@@ -38,7 +32,7 @@
   opacity: 0;
 }
 .reveal {
-  transform: translateY(60px);
+  transform: translateY(100px);
   opacity: 0;
   transition: 0.4s all ease;
 }
