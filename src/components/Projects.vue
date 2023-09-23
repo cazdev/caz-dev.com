@@ -14,12 +14,23 @@
             <div class="image" :style="{ backgroundImage: `url(${p.image})` }" />
         </div>
     </div>
+    <div class="github-info-text reveal">See all my projects on <a href="https://github.com/cazdev" target="_blank">Github</a></div>
 </template>
 
 <style scoped>
 .container {
   column-width: 20em;
   margin: 0 10em;
+}
+.github-info-text {
+  width: 100%;
+  text-align: center;
+  margin: 3em 0;
+  font-size: 1.3em;
+}
+.github-info-text a {
+  color: var(--text-color);
+  text-decoration: underline;
 }
 .name {
   font-size: 1.5em;
@@ -47,14 +58,14 @@ svg {
   background-size: cover;
   background-position: center;
   display: inline-block;
-  height: 26em;
+  height: 24em;
   width: 100%;
   transition: all 0.2s;
   cursor: pointer;
   opacity: 0.9;
 }
 .content:hover + .image, .image:hover {
-  opacity: 0.1;
+  opacity: 0.06;
 }
 .item .content, .item svg {
   opacity: 0;
@@ -77,10 +88,10 @@ svg {
   height: 100%;
 }
 .item:nth-child(2n), .item:nth-child(2n) .image {
-    height: 28em;
+    height: 30em;
 }
 .item:nth-child(3n), .item:nth-child(3n) .image {
-  height: 22em;
+  height: 28em;
 }
 .item:nth-child(4n), .item:nth-child(4n) .image {
   height: 26em;
