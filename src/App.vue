@@ -94,7 +94,7 @@ onMounted(() => {
     <NeoButton ref="neo3" :image="resumeIcon" text="Resume" :link="resume">
       <ResumeIcon />
     </NeoButton>
-    <NeoButton ref="neo4" :image="contact" text="Contact" :link="`mailto: ${email}?subject=Contact%20from%20caz-dev.com`">
+    <NeoButton ref="neo4" :image="contact" text="Contact" :link="`mailto: ${email}?subject=Contact%20From%20Your%20Website`">
       <ContactIcon />
     </NeoButton>
   </div>

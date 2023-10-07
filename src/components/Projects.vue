@@ -101,7 +101,7 @@ svg {
     margin: 0;
   }
   .image, .item {
-  height: 30em !important;
+  height: 20em !important;
 }
 .item {
     padding: 1em 0.5em;

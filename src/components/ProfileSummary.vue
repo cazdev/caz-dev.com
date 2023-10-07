@@ -31,6 +31,17 @@ import { name, description } from '@/constants'
   transform-origin: 70% 70%;
   display: inline-block;
 }
+@media screen and (max-width: 700px) {
+    .profile-summary {
+        font-size: 1.4em;
+    }
+    .profile-summary .title {
+        font-size: 1.8em;
+    }
+    .profile-summary .description {
+        font-size: 1.1em;
+    }
+}
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }

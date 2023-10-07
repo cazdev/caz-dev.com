@@ -15,6 +15,7 @@ defineProps({
             </div>
             <section class="timeline-item">
                 <div class="item">
+                    <div class="logo" :style="{ backgroundImage: `url(${x.image})`}"></div>
                     <span class="dot-start reveal-pop"></span>
                     <span class="dot-end reveal-pop"></span>
                     <h3 class="date-item">{{ x.title }}</h3>
@@ -30,10 +31,24 @@ defineProps({
 
 <style scoped>
 .timeline {
+     position: relative;
+     left: 5em;
     margin: 5em auto;
     text-align: left;
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
+}
+.logo {
+    width: 4em;
+    height: 4em;
+    border-radius: 4em;
+    position: absolute;
+    left: -12em;
+    top: 2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s;
 }
 .timeline-item .title-item {
     margin: 0;
@@ -59,7 +74,10 @@ defineProps({
     transition: all 0.2s;
 }
 .wrapper-item:hover .description-item {
-    height: 5em;
+    height: 6em;
+}
+.wrapper-item:hover .logo {
+    top: 4em;
 }
 .timeline .wrapper-item .section-year {
     display: flex;
@@ -102,8 +120,14 @@ defineProps({
 
 @media screen and (max-width: 700px) {
     .description-item {
-    display: none;
-}
+        display: none;
+    }
+    .timeline {
+        left: 0;
+    }
+    .logo {
+        display: none;
+    }
 }
 
 </style>
