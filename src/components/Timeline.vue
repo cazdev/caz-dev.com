@@ -49,6 +49,7 @@ defineProps({
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.2s;
+    background-color: var(--background-shade-secondary);
 }
 .timeline-item .title-item {
     margin: 0;
