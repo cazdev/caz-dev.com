@@ -16,7 +16,7 @@ const fs = require("fs");
     await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
     await execa("rm", ["-r", folderName]);
     console.log("Reverting local changes...");
-    await execa("git", ["checkout", "-f", "main"]);
+    await execa("git", ["reset", "--hard", "HEAD~1"]);
     console.log("Successfully deployed.");
   } catch (e) {
     console.log(e.message);
