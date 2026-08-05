@@ -1,0 +1,23 @@
+import React, { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+
+export default function ScrollToTop() {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const scrollUp = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+
+  if (!visible) return null
+
+  return (
+    <button className="ScrollToTopBtn" onClick={scrollUp} aria-label="Scroll to top">
+      <FontAwesomeIcon icon={faArrowUp} />
+    </button>
+  )
+}

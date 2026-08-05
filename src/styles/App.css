@@ -1,28 +1,26 @@
-/* Styling */
+/* Scroll-to-top button */
 
-html {
-  scroll-behavior: smooth;
-  overflow:auto;
-}
-
-.ScrollToTop {
+.ScrollToTopBtn {
   position: fixed;
-  top: 10vmin;
-  left: calc(50%);
-  height: calc(25px + 2vmin);
-  width: calc(25px + 2vmin);
-  border: none;
-  outline: none;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
   cursor: pointer;
-  font-size: calc(8px + 2vmin);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 0 20px var(--accent-glow), 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.2s var(--ease-spring), box-shadow 0.2s var(--ease);
+  z-index: 100;
 }
 
-.icon {
-  display: inline-block;
-  margin-top: 5vmin;
-  font-size: calc(2px + 2vmin);
+.ScrollToTopBtn:hover {
+  transform: scale(1.15) translateY(-2px);
+  box-shadow: 0 0 30px var(--accent-glow), 0 6px 20px rgba(0,0,0,0.5);
 }
