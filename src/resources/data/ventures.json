@@ -1,0 +1,56 @@
+[
+    {
+        "title": "JB & Sons",
+        "role": "Co-Owner (50/50)",
+        "description": "Sydney hospitality business operating across three venues — Narrabeen, Dee Why, and Manly. I co-own and run the technology side of the business, building and maintaining all internal software, ordering systems, and staff tooling.",
+        "stack": "Hospitality · Sydney, AU",
+        "url": "https://jbandsons.com.au",
+        "image": "https://i.imgur.com/placeholder.png",
+        "badge": "Co-Owned"
+    },
+    {
+        "title": "JB Orders",
+        "role": "Co-Founder & Lead Engineer",
+        "description": "End-to-end ordering platform for JB & Sons venues — customers order online, staff manage and fulfill orders in real time. Integrates Square POS, Uber Eats, and DoorDash with a Cloudflare Worker API and two Vue 3 SPAs.",
+        "stack": "Vue 3 · Cloudflare Workers · Square · Hono",
+        "url": "https://orders.jbandsons.com.au",
+        "image": "https://i.imgur.com/placeholder.png",
+        "badge": "Co-Founded"
+    },
+    {
+        "title": "JB Time",
+        "role": "Co-Founder & Lead Engineer",
+        "description": "Staff time-tracking system with GPS-verified clock-in/out. Includes a web dashboard, Android & iOS app (React Native / Expo), and a Cloudflare Worker API. Saves hours of manual payroll reconciliation each week.",
+        "stack": "React Native · Expo · Cloudflare Workers · Vue 3",
+        "url": "https://time.jbandsons.com.au",
+        "image": "https://i.imgur.com/placeholder.png",
+        "badge": "Co-Founded"
+    },
+    {
+        "title": "Jumpy Jar",
+        "role": "Co-Founder & Lead Engineer",
+        "description": "Early childhood education marketplace where creators sell digital learning resources to educators and parents. Features Stripe payments, Google OAuth, a creator dashboard, and an admin approval workflow — all on Cloudflare Workers.",
+        "stack": "Vue 3 · Cloudflare Workers · Stripe · KV",
+        "url": "https://jumpyjar.com.au",
+        "image": "https://i.imgur.com/placeholder.png",
+        "badge": "Co-Founded"
+    },
+    {
+        "title": "FearAlert",
+        "role": "Founder",
+        "description": "SaaS email alert service that notifies subscribers when the Fear & Greed Index drops into fear territory. $2/week subscription via Stripe. Runs on Cloudflare Workers + D1 with hourly cron jobs and a custom email delivery pipeline.",
+        "stack": "Cloudflare Workers · D1 · Stripe · KV",
+        "url": "https://fearalert.app",
+        "image": "https://i.imgur.com/bQB7YV7.jpg",
+        "badge": "Founded"
+    },
+    {
+        "title": "Northstar Technology",
+        "role": "Co-Founder",
+        "description": "Sydney-based IT consulting business helping growing companies automate operations, build custom software, and manage technology — without the overhead of an internal tech team.",
+        "stack": "Vue 3 · Cloudflare Pages · Vite · TypeScript",
+        "url": "https://northstartechnology.com.au",
+        "image": "https://i.imgur.com/placeholder.png",
+        "badge": "Co-Founded"
+    }
+]

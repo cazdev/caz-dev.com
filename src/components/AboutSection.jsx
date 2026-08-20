@@ -44,8 +44,10 @@ export default function AboutSection() {
             Hi, I'm <span className="grad-text">Chaz</span>
           </h2>
           <p className="section-subtitle">
-            Frontend-focused Software Engineer based in Sydney with broad experience
-            spanning UI/UX engineering, mapping services, kiosk development, and enterprise IT.
+            Full-stack Software Engineer and entrepreneur based in Sydney. By day I build
+            systems for government and enterprise; outside of that I co-own
+            a hospitality business and ship my own products — from SaaS tools to
+            marketplaces to mobile apps.
           </p>
         </div>
 
@@ -63,7 +65,7 @@ export default function AboutSection() {
           <TimelineItem
             logo={snswLogo}
             date="2023 — Present"
-            role="Front-end Software Engineer"
+            role="Senior Software Engineer"
             company="Service NSW"
             description="Developing a secure, fast, framework-agnostic JavaScript component library for mapping and spatial services used across government digital products."
           />

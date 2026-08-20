@@ -2,6 +2,7 @@ import '../styles/App.css'
 
 import HeroSection from './HeroSection'
 import AboutSection from './AboutSection'
+import VenturesSection from './VenturesSection'
 import ProjectsSection from './ProjectsSection'
 import SiteFooter from './SiteFooter'
 import ScrollToTop from './ScrollToTop'
@@ -14,6 +15,7 @@ function App() {
     <>
       <HeroSection />
       <AboutSection />
+      <VenturesSection />
       <ProjectsSection />
       <SiteFooter />
       <ScrollToTop />
