@@ -7,10 +7,15 @@ import 'react-vertical-timeline-component/style.min.css'
 import './AboutSection.css'
 import experience from '../resources/data/experience'
 
+/* Highlighted skills come first and get the accent style */
+const primarySkills = [
+  'React', 'Vue', 'Angular', 'TypeScript', 'JavaScript', 'Node.js',
+  'CSS / Sass', 'Web Components',
+]
+
 const skills = [
-  'React', 'TypeScript', 'JavaScript', 'Node.js',
-  'CSS / Sass', 'Web Components', 'GSAP', 'Figma',
-  'Python', 'Go', 'C#', 'SQL', 'Git', 'Agile',
+  ...primarySkills,
+  'GSAP', 'Figma', 'Python', 'Go', 'C#', 'SQL', 'Git', 'Agile',
 ]
 
 function TimelineItem({ logo, logoClassName, date, role, company, website, location, technologies, description }) {
@@ -49,8 +54,8 @@ export default function AboutSection() {
 
         {/* Skills */}
         <div className="about__skills">
-          {skills.map((s, i) => (
-            <span key={s} className={`skill-chip ${i < 6 ? 'skill-chip--accent' : ''}`}>
+          {skills.map((s) => (
+            <span key={s} className={`skill-chip ${primarySkills.includes(s) ? 'skill-chip--accent' : ''}`}>
               {s}
             </span>
           ))}
