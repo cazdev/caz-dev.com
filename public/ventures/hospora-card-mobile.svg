@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Hospora</title>
+  <desc>Hospitality, connected. Bookings, orders, vouchers, purchasing, staff, analytics and mail.</desc>
+  <rect width="1200" height="630" fill="#0b7a59" />
+  <!-- A taller composition keeps the headline legible on narrow cards. -->
+  <g id="hospora-content" fill="#fff" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g transform="translate(422 164)">
+      <g fill="none" stroke="#fff" stroke-width="12">
+        <circle cx="30" cy="30" r="26" />
+        <circle cx="68" cy="30" r="26" />
+      </g>
+      <text x="122" y="63" font-size="60" font-weight="700" text-anchor="start">hospora</text>
+    </g>
+    <g font-size="88" font-weight="700">
+      <text x="600" y="306">Hospitality,</text>
+      <text x="600" y="392">connected.</text>
+    </g>
+    <g fill="#e0efea" font-size="36">
+      <text x="600" y="456">Bookings, orders, vouchers, purchasing,</text>
+      <text x="600" y="496">staff, analytics and mail.</text>
+    </g>
+  </g>
+</svg>

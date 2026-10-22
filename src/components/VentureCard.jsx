@@ -3,24 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function VentureCard({ venture }) {
-  const badgeClass =
-    venture.badge === 'Founded' || venture.badge === 'Co-Founded'
-      ? 'venture-card__badge--founder'
-      : venture.badge === 'Co-Owned'
-      ? 'venture-card__badge--owner'
-      : ''
-
   return (
     <article className="venture-card">
       <a
         href={venture.url}
         target="_blank"
         rel="noreferrer"
-        className="venture-card__image-wrap"
+        className={`venture-card__image-wrap${venture.imageVariant === 'brand' ? ' venture-card__image-wrap--brand' : ''}`}
+        style={venture.imageBackground ? { background: venture.imageBackground } : undefined}
+        aria-label={`Visit ${venture.title}`}
       >
-        <img src={venture.image} alt={`${venture.title} preview`} />
+        <picture>
+          {venture.imageMobile && <source media="(max-width: 480px)" srcSet={venture.imageMobile} />}
+          <img src={venture.image} alt="" loading="lazy" />
+        </picture>
         <div className="venture-card__image-overlay" />
-        <span className={`venture-card__badge ${badgeClass}`}>
+        <span className="venture-card__badge">
           {venture.badge}
         </span>
       </a>
@@ -32,7 +30,6 @@ export default function VentureCard({ venture }) {
         </div>
         <p className="venture-card__desc">{venture.description}</p>
         <div className="venture-card__footer">
-          <span className="venture-card__stack">{venture.stack}</span>
           <a
             className="venture-card__link"
             href={venture.url}

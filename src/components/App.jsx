@@ -3,7 +3,7 @@ import '../styles/App.css'
 import HeroSection from './HeroSection'
 import AboutSection from './AboutSection'
 import VenturesSection from './VenturesSection'
-import ProjectsSection from './ProjectsSection'
+import ContactSection from './ContactSection'
 import SiteFooter from './SiteFooter'
 import ScrollToTop from './ScrollToTop'
 import Animations from '../util/Animations'
@@ -16,7 +16,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <VenturesSection />
-      <ProjectsSection />
+      <ContactSection />
       <SiteFooter />
       <ScrollToTop />
     </>

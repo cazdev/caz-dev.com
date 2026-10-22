@@ -22,7 +22,7 @@
 
   --text-primary:  #f8fafc;
   --text-secondary:#94a3b8;
-  --text-muted:    #475569;
+  --text-muted:    #7c879b;   /* ≥4.5:1 on --bg and --bg-2 */
 
   /* Typography */
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -60,6 +60,14 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* ─── Focus ───────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -101,4 +109,16 @@ body::before {
   opacity: 0.025;
   pointer-events: none;
   z-index: 0;
+}
+
+/* ─── Reduced motion ──────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

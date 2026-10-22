@@ -28,7 +28,7 @@
 
 .ventures__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
   gap: 1.5rem;
 }
 
@@ -71,12 +71,13 @@
 .venture-card__image-wrap {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  aspect-ratio: 1200 / 630;
   flex-shrink: 0;
   display: block;
 }
 
 .venture-card__image-wrap img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -93,6 +94,19 @@
   background: linear-gradient(to top, rgba(6,6,15,0.75) 0%, transparent 60%);
 }
 
+/* Branded artwork keeps its text sharp, readable, and inside the safe area. */
+.venture-card__image-wrap--brand img {
+  object-fit: contain;
+}
+
+.venture-card:hover .venture-card__image-wrap--brand img {
+  transform: none;
+}
+
+.venture-card__image-wrap--brand .venture-card__image-overlay {
+  display: none;
+}
+
 /* ── Badge ── */
 
 .venture-card__badge {
@@ -105,22 +119,10 @@
   text-transform: uppercase;
   padding: 0.3rem 0.75rem;
   border-radius: 2rem;
-  background: rgba(99,102,241,0.2);
-  border: 1px solid rgba(99,102,241,0.35);
-  color: var(--accent-3);
+  background: rgba(6,6,15,0.7);
+  border: 1px solid rgba(167,139,250,0.5);
+  color: #d8b4fe;
   backdrop-filter: blur(8px);
-}
-
-.venture-card__badge--founder {
-  background: rgba(167,139,250,0.2);
-  border-color: rgba(167,139,250,0.4);
-  color: var(--accent-3);
-}
-
-.venture-card__badge--owner {
-  background: rgba(6,182,212,0.12);
-  border-color: rgba(6,182,212,0.3);
-  color: var(--accent-2);
 }
 
 /* ── Body ── */
@@ -166,25 +168,10 @@
 .venture-card__footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 0.75rem;
   border-top: 1px solid var(--border);
   gap: 0.5rem;
-}
-
-.venture-card__stack {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--accent-3);
-  letter-spacing: 0.03em;
-  background: rgba(167,139,250,0.08);
-  border: 1px solid rgba(167,139,250,0.18);
-  border-radius: 1rem;
-  padding: 0.25rem 0.75rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 65%;
 }
 
 .venture-card__link {
@@ -202,7 +189,3 @@
   color: var(--text-primary);
 }
 
-@media (max-width: 600px) {
-  .venture-card__image-wrap { height: 160px; }
-  .venture-card__stack { max-width: 55%; }
-}

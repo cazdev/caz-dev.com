@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06060f"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#12122a"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d20"/>
+      <stop offset="100%" stop-color="#06060f"/>
+    </linearGradient>
+    <linearGradient id="clockRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="277" y="108" width="166" height="284" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.04" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- Ambient glow blobs -->
+  <ellipse cx="200" cy="250" rx="180" ry="140" fill="#6366f1" opacity="0.06"/>
+  <ellipse cx="600" cy="250" rx="160" ry="120" fill="#06b6d4" opacity="0.06"/>
+
+  <!-- Phone body -->
+  <rect x="265" y="70" width="190" height="360" rx="24" fill="url(#phoneGrad)" stroke="rgba(99,102,241,0.3)" stroke-width="1.5"/>
+
+  <!-- Phone notch -->
+  <rect x="315" y="78" width="90" height="20" rx="10" fill="#0d0d1a"/>
+  <!-- Camera dot -->
+  <circle cx="383" cy="88" r="4" fill="#1a1a2e" stroke="#6366f1" stroke-width="1" opacity="0.8"/>
+
+  <!-- Screen area -->
+  <rect x="277" y="108" width="166" height="284" rx="8" fill="url(#screenGrad)"/>
+
+  <!-- Status bar -->
+  <text x="289" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#475569">9:41 AM</text>
+  <text x="420" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#475569" text-anchor="end">●●●</text>
+
+  <!-- App header on screen -->
+  <text x="360" y="146" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#f8fafc" text-anchor="middle">JB Time</text>
+
+  <!-- Clock face on screen -->
+  <circle cx="360" cy="210" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Clock ring (progress arc ~75%) -->
+  <circle cx="360" cy="210" r="42" fill="none" stroke="url(#clockRing)" stroke-width="4"
+    stroke-dasharray="198 66" stroke-dashoffset="66" stroke-linecap="round" filter="url(#softglow)"/>
+  <!-- Clock face inner -->
+  <circle cx="360" cy="210" r="32" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+  <!-- Hour hand -->
+  <line x1="360" y1="210" x2="360" y2="192" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="360" y1="210" x2="374" y2="204" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" filter="url(#softglow)"/>
+  <!-- Center dot -->
+  <circle cx="360" cy="210" r="3" fill="url(#accent)"/>
+  <!-- Clock tick marks -->
+  <g stroke="rgba(255,255,255,0.2)" stroke-width="1.5">
+    <line x1="360" y1="170" x2="360" y2="175"/>
+    <line x1="360" y1="245" x2="360" y2="250"/>
+    <line x1="318" y1="210" x2="323" y2="210"/>
+    <line x1="397" y1="210" x2="402" y2="210"/>
+  </g>
+
+  <!-- Time display -->
+  <text x="360" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#f8fafc" text-anchor="middle">08:42</text>
+  <text x="360" y="289" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">CLOCKED IN</text>
+
+  <!-- GPS pill -->
+  <rect x="326" y="298" width="68" height="18" rx="9" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <circle cx="337" cy="307" r="3" fill="#06b6d4" filter="url(#softglow)"/>
+  <text x="343" y="311" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#06b6d4">Narrabeen</text>
+
+  <!-- Clock-out button on screen -->
+  <rect x="316" y="326" width="88" height="26" rx="13" fill="url(#accent)" opacity="0.9"/>
+  <text x="360" y="343" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">Clock Out</text>
+
+  <!-- Home indicator -->
+  <rect x="335" y="400" width="50" height="3" rx="2" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- ===== LEFT SIDE: Timesheet card ===== -->
+  <rect x="60" y="140" width="170" height="220" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="145" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#f8fafc" text-anchor="middle">This Week</text>
+  <!-- Row entries -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="10">
+    <!-- Mon -->
+    <text x="80" y="195" fill="#94a3b8">Mon</text>
+    <rect x="116" y="183" width="52" height="16" rx="4" fill="rgba(99,102,241,0.15)"/>
+    <text x="142" y="195" fill="#a78bfa" text-anchor="middle">8.5 h</text>
+    <!-- Tue -->
+    <text x="80" y="218" fill="#94a3b8">Tue</text>
+    <rect x="116" y="206" width="52" height="16" rx="4" fill="rgba(99,102,241,0.15)"/>
+    <text x="142" y="218" fill="#a78bfa" text-anchor="middle">7.0 h</text>
+    <!-- Wed -->
+    <text x="80" y="241" fill="#94a3b8">Wed</text>
+    <rect x="116" y="229" width="52" height="16" rx="4" fill="rgba(99,102,241,0.15)"/>
+    <text x="142" y="241" fill="#a78bfa" text-anchor="middle">9.0 h</text>
+    <!-- Thu -->
+    <text x="80" y="264" fill="#94a3b8">Thu</text>
+    <rect x="116" y="252" width="52" height="16" rx="4" fill="rgba(99,102,241,0.15)"/>
+    <text x="142" y="264" fill="#a78bfa" text-anchor="middle">6.5 h</text>
+    <!-- Fri — active/today -->
+    <text x="80" y="287" fill="#f8fafc" font-weight="600">Fri</text>
+    <rect x="116" y="275" width="52" height="16" rx="4" fill="rgba(6,182,212,0.2)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+    <text x="142" y="287" fill="#06b6d4" text-anchor="middle">4.2 h</text>
+  </g>
+  <!-- Total -->
+  <line x1="80" y1="302" x2="210" y2="302" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">Total</text>
+  <text x="210" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6366f1" text-anchor="end">35.2 h</text>
+
+  <!-- ===== RIGHT SIDE: Staff card ===== -->
+  <rect x="490" y="140" width="250" height="220" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="615" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#f8fafc" text-anchor="middle">Staff On Shift</text>
+
+  <!-- Staff rows -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="10">
+    <!-- Person 1 -->
+    <circle cx="514" cy="193" r="10" fill="rgba(99,102,241,0.3)" stroke="rgba(99,102,241,0.5)" stroke-width="1"/>
+    <text x="514" y="197" fill="#6366f1" text-anchor="middle" font-size="9" font-weight="700">JL</text>
+    <text x="534" y="190" fill="#f8fafc">Jake L.</text>
+    <text x="534" y="202" fill="#94a3b8">Bar · 4:00 PM</text>
+    <circle cx="720" cy="193" r="4" fill="#06b6d4" filter="url(#softglow)"/>
+
+    <!-- Person 2 -->
+    <circle cx="514" cy="225" r="10" fill="rgba(6,182,212,0.3)" stroke="rgba(6,182,212,0.5)" stroke-width="1"/>
+    <text x="514" y="229" fill="#06b6d4" text-anchor="middle" font-size="9" font-weight="700">SR</text>
+    <text x="534" y="222" fill="#f8fafc">Sam R.</text>
+    <text x="534" y="234" fill="#94a3b8">Floor · 2:00 PM</text>
+    <circle cx="720" cy="225" r="4" fill="#06b6d4" filter="url(#softglow)"/>
+
+    <!-- Person 3 -->
+    <circle cx="514" cy="257" r="10" fill="rgba(167,139,250,0.3)" stroke="rgba(167,139,250,0.5)" stroke-width="1"/>
+    <text x="514" y="261" fill="#a78bfa" text-anchor="middle" font-size="9" font-weight="700">MT</text>
+    <text x="534" y="254" fill="#f8fafc">Mia T.</text>
+    <text x="534" y="266" fill="#94a3b8">Kitchen · 3:00 PM</text>
+    <circle cx="720" cy="257" r="4" fill="#06b6d4" filter="url(#softglow)"/>
+
+    <!-- Person 4 - clocked out -->
+    <circle cx="514" cy="289" r="10" fill="rgba(71,85,105,0.3)" stroke="rgba(71,85,105,0.4)" stroke-width="1"/>
+    <text x="514" y="293" fill="#475569" text-anchor="middle" font-size="9" font-weight="700">BK</text>
+    <text x="534" y="286" fill="#94a3b8">Ben K.</text>
+    <text x="534" y="298" fill="#475569">Clocked out</text>
+    <circle cx="720" cy="289" r="4" fill="#475569"/>
+  </g>
+
+  <!-- Payroll saved banner -->
+  <rect x="490" y="376" width="250" height="40" rx="12" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+  <text x="615" y="392" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#6366f1" text-anchor="middle">Payroll saved this week</text>
+  <text x="615" y="408" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#f8fafc" text-anchor="middle">~3 hours reconciliation</text>
+
+  <!-- GPS verified badge (bottom left) -->
+  <rect x="60" y="376" width="170" height="40" rx="12" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <circle cx="83" cy="396" r="6" fill="rgba(6,182,212,0.2)" stroke="#06b6d4" stroke-width="1"/>
+  <text x="83" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#06b6d4" text-anchor="middle">✓</text>
+  <text x="97" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#06b6d4">GPS Verified</text>
+  <text x="97" y="407" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#94a3b8">Clock-in/out</text>
+</svg>

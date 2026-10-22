@@ -41,21 +41,6 @@ export default function Animations() {
           start: 'top 85%',
         },
       })
-
-      /* Project cards */
-      gsap.utils.toArray('.project-card').forEach((card, i) => {
-        gsap.from(card, {
-          y: 50,
-          opacity: 0,
-          duration: 0.6,
-          delay: (i % 2) * 0.1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: card,
-            start: 'top 88%',
-          },
-        })
-      })
     })
 
     return () => ctx.revert()

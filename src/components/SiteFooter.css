@@ -36,6 +36,12 @@
   color: var(--accent);
 }
 
+/* Keep footer icons clear of the fixed scroll-to-top button */
+@media (max-width: 1240px) {
+  .site-footer__inner { padding-right: 4rem; }
+}
+
 @media (max-width: 480px) {
+  .site-footer__inner { padding-right: 0; padding-bottom: 4rem; }
   .site-footer__inner { justify-content: center; text-align: center; }
 }

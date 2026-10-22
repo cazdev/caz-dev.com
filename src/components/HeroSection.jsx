@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane, faMapMarkerAlt, faFileAlt, faUser, faCode } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faMapMarkerAlt, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { name, jobtitle, company } from '../util/Info'
 import './HeroSection.css'
 
@@ -15,12 +15,6 @@ export default function HeroSection() {
       <div className="hero__orb hero__orb--3" />
 
       <div className="hero__content">
-        {/* Status badge */}
-        <div className="hero__badge">
-          <span className="hero__badge-dot" />
-          Available for new opportunities
-        </div>
-
         {/* Name */}
         <h1 className="hero__name">
           <span className="grad-text">{name}</span>
@@ -51,18 +45,16 @@ export default function HeroSection() {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a
-            className="hero__social-link"
-            href="mailto:contact@caz-dev.com?subject=Hi Chaz!"
-            aria-label="Email"
-          >
-            <FontAwesomeIcon icon={faPaperPlane} />
-          </a>
+          <Link to="ContactSection" href="#ContactSection" smooth duration={600} offset={-40} aria-label="Contact" className="hero__social-anchor">
+            <span className="hero__social-link">
+              <FontAwesomeIcon icon={faPaperPlane} />
+            </span>
+          </Link>
         </div>
 
         {/* Navigation cards */}
         <nav className="hero__nav">
-          <Link to="AboutSection" smooth duration={600} offset={-40}>
+          <Link to="AboutSection" href="#AboutSection" smooth duration={600} offset={-40}>
             <div className="hero__nav-card">
               <span className="hero__nav-icon">
                 <FontAwesomeIcon icon={faUser} />
@@ -71,45 +63,28 @@ export default function HeroSection() {
             </div>
           </Link>
 
-          <Link to="ProjectsSection" smooth duration={600} offset={-40}>
+          <Link to="VenturesSection" href="#VenturesSection" smooth duration={600} offset={-40}>
             <div className="hero__nav-card">
               <span className="hero__nav-icon">
-                <FontAwesomeIcon icon={faCode} />
+                <FontAwesomeIcon icon={faBriefcase} />
               </span>
-              <span className="hero__nav-label">Projects</span>
+              <span className="hero__nav-label">Ventures</span>
             </div>
           </Link>
 
-          <a
-            className="hero__nav-card"
-            href="https://drive.google.com/u/0/uc?id=18PNVOmApvbXoYA6aPAOkw3UCfQelI_bn"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="hero__nav-icon">
-              <FontAwesomeIcon icon={faFileAlt} />
-            </span>
-            <span className="hero__nav-label">Resume</span>
-          </a>
-
-          <a
-            className="hero__nav-card"
-            href="mailto:contact@caz-dev.com?subject=Hi Chaz!"
-          >
-            <span className="hero__nav-icon">
-              <FontAwesomeIcon icon={faPaperPlane} />
-            </span>
-            <span className="hero__nav-label">Contact</span>
-          </a>
+          <Link to="ContactSection" href="#ContactSection" smooth duration={600} offset={-40}>
+            <div className="hero__nav-card">
+              <span className="hero__nav-icon">
+                <FontAwesomeIcon icon={faPaperPlane} />
+              </span>
+              <span className="hero__nav-label">Contact</span>
+            </div>
+          </Link>
         </nav>
       </div>
 
       {/* Footer contact strip */}
       <div className="hero__footer">
-        <span className="hero__footer-item">
-          <FontAwesomeIcon icon={faPaperPlane} className="hero__footer-icon" />
-          contact@caz-dev.com
-        </span>
         <span className="hero__footer-item">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="hero__footer-icon" />
           Sydney, NSW

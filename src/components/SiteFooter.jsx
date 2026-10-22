@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
@@ -19,9 +20,9 @@ export default function SiteFooter() {
           <a href="https://linkedin.com/in/chaz-lambrechtsen" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="mailto:contact@caz-dev.com?subject=Hi Chaz!" aria-label="Email">
+          <Link to="ContactSection" href="#ContactSection" smooth duration={600} offset={-40} aria-label="Contact">
             <FontAwesomeIcon icon={faPaperPlane} />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

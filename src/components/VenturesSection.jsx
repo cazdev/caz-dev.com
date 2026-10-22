@@ -10,7 +10,7 @@ export default function VenturesSection() {
         <div className="section-header">
           <span className="section-tag">Ventures</span>
           <h2 className="section-title">
-            Founded &amp; <span className="grad-text">Co-Founded</span>
+            Founded &amp; <span className="grad-text">Co&#8209;Founded</span>
           </h2>
           <p className="section-subtitle">
             Products and companies I've built from the ground up — from idea to production.
