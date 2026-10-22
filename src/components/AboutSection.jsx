@@ -9,13 +9,14 @@ import experience from '../resources/data/experience'
 
 /* Highlighted skills come first and get the accent style */
 const primarySkills = [
-  'React', 'Vue', 'Angular', 'TypeScript', 'JavaScript', 'Node.js',
-  'CSS / Sass', 'Web Components',
+  'React', 'Vue', 'Angular', 'React Native', 'TypeScript', 'JavaScript',
+  'Node.js', 'AWS', 'AI / LLM Integration', 'CSS / Sass', 'Web Components',
 ]
 
 const skills = [
   ...primarySkills,
-  'GSAP', 'Figma', 'Python', 'Go', 'C#', 'SQL', 'Git', 'Agile',
+  'Terraform', 'Docker', 'CI/CD', 'Playwright', 'Express', '.NET', 'C#',
+  'Python', 'Go', 'SQL', 'Shopify', 'GSAP', 'Figma', 'Git', 'Agile',
 ]
 
 function TimelineItem({ logo, logoClassName, date, role, company, website, location, technologies, description }) {
