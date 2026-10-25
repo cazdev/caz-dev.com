@@ -15,7 +15,7 @@ const primarySkills = [
 
 const skills = [
   ...primarySkills,
-  'Terraform', 'Docker', 'CI/CD', 'Playwright', 'Express', '.NET', 'C#',
+  'Terraform', 'Docker', 'CI/CD', 'Playwright', 'Express', 'Java', '.NET', 'C#',
   'Python', 'Go', 'SQL', 'Shopify', 'GSAP', 'Figma', 'Git', 'Agile',
 ]
 

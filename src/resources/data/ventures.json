@@ -1,14 +1,14 @@
 [
     {
         "title": "Hospora",
-        "role": "Co-Founder & Lead Engineer",
+        "role": "Founding Engineer",
         "description": "Connected hospitality platform bringing bookings, online orders, vouchers, purchasing, staff time, analytics, alerts, and email into one system. Helps venues manage day-to-day operations across web and mobile.",
         "url": "https://hospora.app",
         "image": "/ventures/hospora-card.svg",
         "imageMobile": "/ventures/hospora-card-mobile.svg",
         "imageVariant": "brand",
         "imageBackground": "#0b7a59",
-        "badge": "Co-Founded"
+        "badge": "Founding Team"
     },
     {
         "title": "Jumpy Jar",

@@ -23,7 +23,7 @@ const experience = [
     company: 'Service NSW',
     website: 'https://www.service.nsw.gov.au/',
     location: 'Sydney, NSW',
-    technologies: 'JavaScript · Preact · Express · AWS',
+    technologies: 'JavaScript · Java · Preact · Express · AWS',
     description: 'Developed a high-speed, framework-agnostic mapping library.',
   },
   {
