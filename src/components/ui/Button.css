@@ -1,0 +1,24 @@
+.button {
+  padding: var(--space-2) var(--space-4);
+  background: var(--text);
+  color: var(--bg);
+  border: 1px solid var(--text);
+  border-radius: var(--radius);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+
+.button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.button:active:not(:disabled) {
+  opacity: 0.75;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

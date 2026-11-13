@@ -1,37 +1,26 @@
 [
     {
         "title": "Hospora",
-        "role": "Founding Engineer",
+        "type": "Platform",
         "description": "Connected hospitality platform bringing bookings, online orders, vouchers, purchasing, staff time, analytics, alerts, and email into one system. Helps venues manage day-to-day operations across web and mobile.",
         "url": "https://hospora.app",
         "image": "/ventures/hospora-card.svg",
         "imageMobile": "/ventures/hospora-card-mobile.svg",
         "imageVariant": "brand",
-        "imageBackground": "#0b7a59",
-        "badge": "Founding Team"
+        "imageBackground": "#0b7a59"
     },
     {
         "title": "Jumpy Jar",
-        "role": "Co-Founder & Lead Engineer",
+        "type": "Marketplace",
         "description": "Early childhood education marketplace where creators sell digital learning resources to educators and parents. Helps educators discover resources to support early learning, while giving creators a place to share and sell their work.",
         "url": "https://jumpyjar.com.au",
-        "image": "/ventures/jumpy-jar.png",
-        "badge": "Co-Founded"
+        "image": "/ventures/jumpy-jar.png"
     },
     {
         "title": "FearAlert",
-        "role": "Founder",
+        "type": "Web app",
         "description": "Email alert service that lets subscribers create custom rules based on the Fear & Greed Index and other technical indicators, then receive alerts when their conditions are met. $2/week subscription.",
         "url": "https://fearalert.app",
-        "image": "/ventures/fearalert.png",
-        "badge": "Founded"
-    },
-    {
-        "title": "Northstar Technology",
-        "role": "Co-Founder",
-        "description": "Sydney-based IT consulting business helping growing companies automate operations, build custom software, and manage technology — without the overhead of an internal tech team.",
-        "url": "https://northstartechnology.com.au",
-        "image": "/ventures/northstar.png",
-        "badge": "Co-Founded"
+        "image": "/ventures/fearalert.png"
     }
 ]

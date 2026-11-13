@@ -1,0 +1,68 @@
+.entry-list {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: var(--meta-col) 1fr;
+  gap: var(--space-1) var(--space-6);
+}
+
+.entry__meta {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.1rem;
+}
+
+.entry__body {
+  min-width: 0;
+}
+
+.entry__title {
+  font-size: var(--text-base);
+}
+
+.entry__subtitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+}
+
+.entry__content {
+  margin-top: var(--space-2);
+}
+
+.entry__footer {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.entry__media {
+  margin-top: var(--space-4);
+  max-width: 22rem;
+}
+
+/* Entries come into focus with the scroll position rather than on a timer. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .entry {
+      animation: entry-focus linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 25%;
+    }
+  }
+}
+
+@keyframes entry-focus {
+  from { opacity: 0.15; }
+}
+
+@media (max-width: 600px) {
+  .entry {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+.variable-type {
+  font-weight: 600;
+  font-stretch: 100%;
+}
+
+.variable-type__letter {
+  display: inline-block;
+  transition: font-weight 220ms var(--ease-out), font-stretch 220ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .variable-type__letter {
+    animation: type-settle 1100ms var(--ease-out) backwards;
+    animation-delay: calc(120ms + var(--i) * 70ms);
+  }
+}

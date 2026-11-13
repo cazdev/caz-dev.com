@@ -1,6 +1,6 @@
 {
   "short_name": "Chaz L.",
-  "name": "Chaz L. — Software Engineer",
+  "name": "Chaz L. | Software Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#06060f",
-  "background_color": "#06060f"
+  "theme_color": "#fbfaf8",
+  "background_color": "#fbfaf8"
 }

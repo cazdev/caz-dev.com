@@ -1,5 +1,5 @@
 /**
- * Cloudflare Pages Function — POST /api/contact
+ * Cloudflare Pages Function: POST /api/contact
  *
  * Sends an email to chaz6cl@live.com via the Cloudflare Email Sending REST API.
  * Requires a Pages secret named CF_EMAIL_TOKEN with email_sending:write permission.
@@ -53,7 +53,7 @@ export async function onRequestPost({ request, env }) {
           to: RECIPIENT,
           from: { address: FROM_ADDRESS, name: FROM_NAME },
           reply_to: email.trim(),
-          subject: `Contact from ${name.trim()} — caz-dev.com`,
+          subject: `Contact from ${name.trim()} via caz-dev.com`,
           text: formatTextBody(name.trim(), email.trim(), message.trim()),
           html: formatHtmlBody(name.trim(), email.trim(), message.trim()),
         }),

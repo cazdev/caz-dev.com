@@ -1,0 +1,25 @@
+/* A faint underline sits under every link; on hover a solid one draws over it from the left. */
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  padding-bottom: 1px;
+  background:
+    linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat,
+    linear-gradient(color-mix(in srgb, currentColor 35%, transparent), color-mix(in srgb, currentColor 35%, transparent)) 0 100% / 100% 1px no-repeat;
+  transition: background-size 300ms var(--ease-out);
+}
+
+.text-link:hover {
+  background-size: 100% 1px, 100% 1px;
+}
+
+.text-link__arrow {
+  display: inline-block;
+  margin-left: 0.15em;
+  font-size: 0.8em;
+  transition: transform 300ms var(--ease-out);
+}
+
+.text-link:hover .text-link__arrow {
+  transform: translate(2px, -2px);
+}

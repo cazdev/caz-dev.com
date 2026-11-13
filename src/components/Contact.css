@@ -1,0 +1,33 @@
+.contact-form {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 34rem;
+}
+
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.contact-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+}
+
+.contact-form__status {
+  font-size: var(--text-sm);
+  color: var(--accent);
+}
+
+.contact-form__status--error {
+  color: var(--danger);
+}
+
+@media (max-width: 600px) {
+  .contact-form__row {
+    grid-template-columns: 1fr;
+  }
+}

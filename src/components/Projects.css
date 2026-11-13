@@ -1,0 +1,33 @@
+.project-image {
+  display: block;
+  aspect-ratio: 1200 / 630;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-image img.project-image__img--contain {
+  object-fit: contain;
+}
+
+/* Photos drift slightly inside their frame while the page scrolls. Brand artwork stays put. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .project-image img:not(.project-image__img--contain) {
+      animation: image-drift linear both;
+      animation-timeline: view();
+    }
+  }
+}
+
+@keyframes image-drift {
+  from { transform: scale(1.12) translateY(-4%); }
+  to   { transform: scale(1.12) translateY(4%); }
+}

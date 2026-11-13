@@ -1,26 +1,22 @@
-import '../styles/App.css'
+import Intro from './Intro'
+import Experience from './Experience'
+import Skills from './Skills'
+import Projects from './Projects'
+import Contact from './Contact'
+import Footer from './Footer'
 
-import HeroSection from './HeroSection'
-import AboutSection from './AboutSection'
-import VenturesSection from './VenturesSection'
-import ContactSection from './ContactSection'
-import SiteFooter from './SiteFooter'
-import ScrollToTop from './ScrollToTop'
-import Animations from '../util/Animations'
-
-function App() {
-  Animations()
-
+export default function App() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
-      <VenturesSection />
-      <ContactSection />
-      <SiteFooter />
-      <ScrollToTop />
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Intro />
+      <main id="main">
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
-
-export default App
